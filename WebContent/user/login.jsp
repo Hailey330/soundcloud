@@ -30,34 +30,25 @@
 <link rel="stylesheet" href="../deerhost/css/slicknav.min.css"
 	type="text/css">
 <link rel="stylesheet" href="../deerhost/css/style.css" type="text/css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
 	href="../login/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
+
 <link rel="stylesheet" type="text/css"
 	href="../login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
 	href="../login/fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
 	href="../login/vendor/animate/animate.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
 	href="../login/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
 	href="../login/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
 	href="../login/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
 	href="../login/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="../login/css/util.css">
 <link rel="stylesheet" type="text/css" href="../login/css/main.css">
-<!--===============================================================================================-->
 </head>
 
 <body>
@@ -160,7 +151,7 @@
 					</div>
 
 					<div class="text-center p-t-40">
-						<a class="txt2" href="#"> Not a member? </a>
+						<a class="txt2" href="./join.jsp"> Not a member? </a>
 					</div>
 				</form>
 			</div>

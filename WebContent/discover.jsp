@@ -9,7 +9,7 @@
 <meta name="keywords" content="Deerhost, unica, creative, html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Create account SoundCloud</title>
+<title>Discover on SoundCloud</title>
 
 <!-- Google Font -->
 <link
@@ -17,46 +17,45 @@
 	rel="stylesheet">
 
 <!-- Css Styles -->
-<link rel="stylesheet" href="../deerhost/css/bootstrap.min.css"
+<link rel="stylesheet" href="deerhost/css/bootstrap.min.css"
 	type="text/css">
-<link rel="stylesheet" href="../deerhost/css/font-awesome.min.css"
+<link rel="stylesheet" href="deerhost/css/font-awesome.min.css"
 	type="text/css">
-<link rel="stylesheet" href="../deerhost/css/elegant-icons.css"
+<link rel="stylesheet" href="deerhost/css/elegant-icons.css"
 	type="text/css">
-<link rel="stylesheet" href="../deerhost/css/flaticon.css"
+<link rel="stylesheet" href="deerhost/css/flaticon.css" type="text/css">
+<link rel="stylesheet" href="deerhost/css/owl.carousel.min.css"
 	type="text/css">
-<link rel="stylesheet" href="../deerhost/css/owl.carousel.min.css"
+<link rel="stylesheet" href="deerhost/css/slicknav.min.css"
 	type="text/css">
-<link rel="stylesheet" href="../deerhost/css/slicknav.min.css"
-	type="text/css">
-<link rel="stylesheet" href="../deerhost/css/style.css" type="text/css">
+<link rel="stylesheet" href="deerhost/css/style.css" type="text/css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="../login/vendor/bootstrap/css/bootstrap.min.css">
+	href="login/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="../login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	href="login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="../login/fonts/iconic/css/material-design-iconic-font.min.css">
+	href="login/fonts/iconic/css/material-design-iconic-font.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="../login/vendor/animate/animate.css">
+	href="login/vendor/animate/animate.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="../login/vendor/css-hamburgers/hamburgers.min.css">
+	href="login/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="../login/vendor/animsition/css/animsition.min.css">
+	href="login/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="../login/vendor/select2/select2.min.css">
+	href="login/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="../login/vendor/daterangepicker/daterangepicker.css">
+	href="login/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../login/css/util.css">
-<link rel="stylesheet" type="text/css" href="../login/css/main.css">
+<link rel="stylesheet" type="text/css" href="login/css/util.css">
+<link rel="stylesheet" type="text/css" href="login/css/main.css">
 <!--===============================================================================================-->
 </head>
 
@@ -73,7 +72,7 @@
 			<span class="fa fa-times-circle-o"></span>
 		</div>
 		<div class="offcanvas__logo">
-			<a href="#"><img src="../deerhost/img/logo-white.png" alt=""></a>
+			<a href="#"><img src="deerhost/img/logo-white-width.png" alt=""></a>
 		</div>
 		<nav class="offcanvas__menu mobile-menu">
 			<ul>
@@ -110,7 +109,34 @@
 
 	<!-- Header Section Begin -->
 	<header class="header-section header-normal">
-		<div class="header__front">
+		<div class="header__front l-container l-fullwidth">
+			<div class="row">
+				<div class="header__left">
+					<div class="header__logo left col-lg-1 col-md-1">
+						<a href="./index.html"><img
+							src="deerhost/img/logo-white-cloud.png" alt=""></a>
+					</div>
+					<div class="header__menu col-lg-8 col-md-8">
+						<nav class="left sc-list-nostyle">
+							<ul>
+								<li><a href="./discover.jsp">Home</a></li>
+								<li><a href="#">Stream</a></li>
+								<li><a href="#">Library</a></li>
+							</ul>
+						</nav>
+						<nav class="middle">
+							<div class="header__search" role="search">
+								<form class="headerSearch">
+									<input class="haederSerch__input sc-input" placeholder="Search" type="search" name="searchbar" autocomplete="off">
+								</form>
+							</div>
+							<ul>
+								<li><a href="#">Upload</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
 			<div class="canvas__open">
 				<span class="fa fa-bars"></span>
 			</div>
@@ -120,31 +146,29 @@
 
 	<div class="limiter">
 		<div class="container-login100"
-			style="background-image: url('../login/images/main.jpeg');">
+			style="background-image: url('login/images/main.jpeg');">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-50 p-t-27"> Create
-						account </span>
+					<span class="login100-form-title p-b-34 p-t-27"> Sign in </span>
 
 					<div class="wrap-input100 validate-input"
-						data-validate="Enter your name">
+						data-validate="Enter username">
 						<input class="input100" type="text" name="username"
-							placeholder="Your ID"> <span
+							placeholder="Your email address"> <span
 							class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input"
-						data-validate="Enter your email">
-						<input class="input100" type="text" name="email"
-							placeholder="Your email address"> <span
-							class="focus-input100" data-placeholder="&#xf15a;"></span>
+						data-validate="Enter password">
+						<input class="input100" type="password" name="pass"
+							placeholder="Password"> <span class="focus-input100"
+							data-placeholder="&#xf191;"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input"
-						data-validate="Enter your password">
-						<input class="input100" type="password" name="pass"
-							placeholder="Your Password"> <span class="focus-input100"
-							data-placeholder="&#xf191;"></span>
+					<div class="contact100-form-checkbox">
+						<input class="input-checkbox100" id="ckb1" type="checkbox"
+							name="remember-me"> <label class="label-checkbox100"
+							for="ckb1"> Remember me </label>
 					</div>
 
 					<div class="container-login100-form-btn">
@@ -160,6 +184,10 @@
 					<div class="container-kakao-form-btn p-t-15">
 						<button class="kakao-form-btn">Continue with Kakao</button>
 					</div>
+
+					<div class="text-center p-t-40">
+						<a class="txt2" href="#"> Not a member? </a>
+					</div>
 				</form>
 			</div>
 		</div>
@@ -170,8 +198,35 @@
 
 	<!-- Footer Section Begin -->
 	<footer class="footer-section">
-		<div class="footer__text">
+		<div class="footer__top">
 			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8">
+						<div class="footer__top-auth">
+							<h5>Thanks for listening. Now join in.</h5>
+							<a href="#" class="primary-btn">Create account</a> <a href="#"
+								class="primary-btn sign-up">Sign in</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__text set-bg"
+			data-setbg="deerhost/img/footer-bg.png">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="footer__text-about">
+							<div class="footer__social">
+								<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+									class="fa fa-twitter"></i></a> <a href="#"><i
+									class="fa fa-youtube-play"></i></a> <a href="#"><i
+									class="fa fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
 				<div class="footer__text-copyright">
 					<p>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -191,27 +246,27 @@
 	<!-- Footer Section End -->
 
 	<!-- Js Plugins -->
-	<script src="../deerhost/js/jquery-3.3.1.min.js"></script>
-	<script src="../deerhost/js/bootstrap.min.js"></script>
-	<script src="../deerhost/js/jquery.slicknav.js"></script>
-	<script src="../deerhost/js/owl.carousel.min.js"></script>
-	<script src="../deerhost/js/main.js"></script>
+	<script src="deerhost/js/jquery-3.3.1.min.js"></script>
+	<script src="deerhost/js/bootstrap.min.js"></script>
+	<script src="deerhost/js/jquery.slicknav.js"></script>
+	<script src="deerhost/js/owl.carousel.min.js"></script>
+	<script src="deerhost/js/main.js"></script>
 	<!--===============================================================================================-->
-	<script src="../login/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="login/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<!--===============================================================================================-->
-	<script src="../login/vendor/animsition/js/animsition.min.js"></script>
+	<script src="login/vendor/animsition/js/animsition.min.js"></script>
 	<!--===============================================================================================-->
-	<script src="../login/vendor/bootstrap/js/popper.js"></script>
-	<script src="../login/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="login/vendor/bootstrap/js/popper.js"></script>
+	<script src="login/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<!--===============================================================================================-->
-	<script src="../login/vendor/select2/select2.min.js"></script>
+	<script src="login/vendor/select2/select2.min.js"></script>
 	<!--===============================================================================================-->
-	<script src="../login/vendor/daterangepicker/moment.min.js"></script>
-	<script src="../login/vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="login/vendor/daterangepicker/moment.min.js"></script>
+	<script src="login/vendor/daterangepicker/daterangepicker.js"></script>
 	<!--===============================================================================================-->
-	<script src="../login/vendor/countdowntime/countdowntime.js"></script>
+	<script src="login/vendor/countdowntime/countdowntime.js"></script>
 	<!--===============================================================================================-->
-	<script src="../login/js/main.js"></script>
+	<script src="login/js/main.js"></script>
 </body>
 
 </html>
