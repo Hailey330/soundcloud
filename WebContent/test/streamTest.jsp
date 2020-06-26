@@ -14,24 +14,24 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
 
 <!-- Css Styles -->
-<link rel="stylesheet" href="deerhost/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="deerhost/css/font-awesome.min.css" type="text/css">
-<link rel="stylesheet" href="deerhost/css/elegant-icons.css" type="text/css">
-<link rel="stylesheet" href="deerhost/css/flaticon.css" type="text/css">
-<link rel="stylesheet" href="deerhost/css/owl.carousel.min.css" type="text/css">
-<link rel="stylesheet" href="deerhost/css/slicknav.min.css" type="text/css">
-<link rel="stylesheet" href="deerhost/css/style.css" type="text/css">
+<link rel="stylesheet" href="/soundcloud/deerhost/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/soundcloud/deerhost/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="/soundcloud/deerhost/css/elegant-icons.css" type="text/css">
+<link rel="stylesheet" href="/soundcloud/deerhost/css/flaticon.css" type="text/css">
+<link rel="stylesheet" href="/soundcloud/deerhost/css/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="/soundcloud/deerhost/css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="/soundcloud/deerhost/css/style.css" type="text/css">
 
-<link rel="stylesheet" type="text/css" href="login/vendor/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="login/fonts/iconic/css/material-design-iconic-font.min.css">
-<link rel="stylesheet" type="text/css" href="login/vendor/animate/animate.css">
-<link rel="stylesheet" type="text/css" href="login/vendor/css-hamburgers/hamburgers.min.css">
-<link rel="stylesheet" type="text/css" href="login/vendor/animsition/css/animsition.min.css">
-<link rel="stylesheet" type="text/css" href="login/vendor/select2/select2.min.css">
-<link rel="stylesheet" type="text/css" href="login/vendor/daterangepicker/daterangepicker.css">
-<link rel="stylesheet" type="text/css" href="login/css/util.css">
-<link rel="stylesheet" type="text/css" href="login/css/main.css">
+<link rel="stylesheet" type="text/css" href="/soundcloud/login/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/soundcloud/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/soundcloud/login/fonts/iconic/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" type="text/css" href="/soundcloud/login/vendor/animate/animate.css">
+<link rel="stylesheet" type="text/css" href="/soundcloud/login/vendor/css-hamburgers/hamburgers.min.css">
+<link rel="stylesheet" type="text/css" href="/soundcloud/login/vendor/animsition/css/animsition.min.css">
+<link rel="stylesheet" type="text/css" href="/soundcloud/login/vendor/select2/select2.min.css">
+<link rel="stylesheet" type="text/css" href="/soundcloud/login/vendor/daterangepicker/daterangepicker.css">
+<link rel="stylesheet" type="text/css" href="/soundcloud/login/css/util.css">
+<link rel="stylesheet" type="text/css" href="/soundcloud/login/css/main.css">
 
 </head>
 
@@ -88,7 +88,7 @@
 			<div class="row header__front">
 				<div class="col-lg-1 col-md-1">
 					<div class="header__logo">
-						<a href="/soundcloud/main?cmd=home"><img src="deerhost/img/logo-white-cloud.png" alt=""></a>
+						<a href="/soundcloud/main?cmd=home"><img src="/soundcloud/deerhost/img/logo-white-cloud.png" alt=""></a>
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9">
@@ -99,13 +99,12 @@
 							<li><a href="#">Library</a></li>
 							<li class="active"><a href="#">Upload</a></li>
 							<li><a href="#">YOURS</a>
-								 <ul class="dropdown">
-                                    <li><a href="#">Profile</a></li>
-                                    <li><a href="/soundcloud/board?cmd=Library">Likes</a></li>
-                                    <li><a href="/soundcloud/board?cmd=Library">Following</a></li>
-                                    <li><a href="/soundcloud/users?cmd=logout">Sign out</a></li>
-                                </ul>
-							</li>
+								<ul class="dropdown">
+									<li><a href="#">Profile</a></li>
+									<li><a href="/soundcloud/board?cmd=Library">Likes</a></li>
+									<li><a href="/soundcloud/board?cmd=Library">Following</a></li>
+									<li><a href="/soundcloud/users?cmd=logout">Sign out</a></li>
+								</ul></li>
 						</ul>
 					</nav>
 				</div>
@@ -124,102 +123,37 @@
 				<div class="col-lg-9">
 					<div class="blog__header">
 						<div class="blog__title">
-							<h4>More of what you like</h4>
-						</div>
-						<div class="blog__subtitle">
-							<p>Suggestions based on what you've liked or played</p>
+							<h6>Hear the latest posts from the people you're following</h6>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<div class="blog__item">
-								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test.jpg"></div>
-								<div class="blog__text">
-									<h5>
-										<a href="#">Godless Heathens</a>
-									</h5>
-									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<div class="blog__item">
-								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test.jpg"></div>
-								<div class="blog__text">
-									<h5>
-										<a href="#">Godless Heathens</a>
-									</h5>
-									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<div class="blog__item">
-								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test.jpg"></div>
-								<div class="blog__text">
-									<h5>
-										<a href="#">Godless Heathens</a>
-									</h5>
-									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<div class="blog__item">
-								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test.jpg"></div>
-								<div class="blog__text">
-									<h5>
-										<a href="#">Godless Heathens</a>
-									</h5>
-									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<div class="blog__item">
-								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test.jpg"></div>
-								<div class="blog__text">
-									<h5>
-										<a href="#">Godless Heathens</a>
-									</h5>
-									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<div class="blog__item">
-								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test.jpg"></div>
-								<div class="blog__text">
-									<h5>
-										<a href="#">Godless Heathens</a>
-									</h5>
-									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4"></div>
+					</div>
 
 
-						<div class="col-lg-12">
-							<div class="load-more">
-								<a href="#" class="primary-btn">Load more posts</a>
+					<div class="sound__waveform">
+						<div class="waveform loaded">
+							<div class="waveform__layer waveform__scene">
+								<canvas aria-hidden="true" class="g-box-full sceneLayer" width="644" height="60"></canvas>
+								<canvas aria-hidden="true" class="g-box-full sceneLayer waveformCommentsNode loaded" width="644" height="60"></canvas>
+								<canvas aria-hidden="true" class="g-box-full sceneLayer" width="644" height="60" style=""></canvas>
+							</div>
+							<div class="commentPlaceholder g-z-index-content">
+								<div class="commentPlaceholder__avatar">
+									<span style="background-image: url(https://i1.sndcdn.com/avatars-000334380658-j9enab-t20x20.jpg); width: 20px; height: 20px;" class="sc-artwork sc-artwork-placeholder-5  "
+										aria-label="민경’s avatar" aria-role="img" aria-hidden="true"></span>
+								</div>
+							</div>
+							<div class="commentPopover darkText smallAvatar small">
+								<div class="commentPopover__scrub">
+									<div class="commentPopover__playableArea" style="width: 100%"></div>
+								</div>
+
+								<div class="commentPopover__wrapper g-opacity-transition">
+									<div class="commentPopover__avatar sc-artwork" style="width: 10px; height: 10px;"></div>
+									<a class="commentPopover__username sc-truncate" href=""></a>
+									<p class="commentPopover__body sc-truncate"></p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -314,20 +248,23 @@
 	<!-- Footer Section End -->
 
 	<!-- Js Plugins -->
-	<script src="deerhost/js/jquery-3.3.1.min.js"></script>
-	<script src="deerhost/js/bootstrap.min.js"></script>
-	<script src="deerhost/js/jquery.slicknav.js"></script>
-	<script src="deerhost/js/owl.carousel.min.js"></script>
-	<script src="deerhost/js/main.js"></script>
-	<script src="login/vendor/jquery/jquery-3.2.1.min.js"></script>
-	<script src="login/vendor/animsition/js/animsition.min.js"></script>
-	<script src="login/vendor/bootstrap/js/popper.js"></script>
-	<script src="login/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="login/vendor/select2/select2.min.js"></script>
-	<script src="login/vendor/daterangepicker/moment.min.js"></script>
-	<script src="login/vendor/daterangepicker/daterangepicker.js"></script>
-	<script src="login/vendor/countdowntime/countdowntime.js"></script>
-	<script src="login/js/main.js"></script>
+	<script src="/soundcloud/deerhost/js/jquery-3.3.1.min.js"></script>
+	<script src="/soundcloud/deerhost/js/bootstrap.min.js"></script>
+	<script src="/soundcloud/deerhost/js/jquery.slicknav.js"></script>
+	<script src="/soundcloud/deerhost/js/owl.carousel.min.js"></script>
+	<script src="/soundcloud/deerhost/js/main.js"></script>
+	<script src="/soundcloud/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/soundcloud/login/vendor/animsition/js/animsition.min.js"></script>
+	<script src="/soundcloud/login/vendor/bootstrap/js/popper.js"></script>
+	<script src="/soundcloud/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/soundcloud/login/vendor/select2/select2.min.js"></script>
+	<script src="/soundcloud/login/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/soundcloud/login/vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="/soundcloud/login/vendor/countdowntime/countdowntime.js"></script>
+	<script src="/soundcloud/login/js/main.js"></script>
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
+
+
 </body>
 
 </html>

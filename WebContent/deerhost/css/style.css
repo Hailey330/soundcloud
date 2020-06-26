@@ -278,11 +278,6 @@ ol {
 	position: relative;
 	-webkit-appearance: none;
 }
-.header__menu>li{
-	float: left;
-	position: relative;
-}
-
 
 .sc-list-nostyle {
 	list-style: none;
@@ -398,6 +393,10 @@ ol {
 .header__menu {
 	text-align: center;
 	padding-top: 30px;
+}
+
+.main__menu {
+	float: right;
 }
 
 .header__menu ul li {

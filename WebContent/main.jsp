@@ -80,12 +80,14 @@
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9">
-					<nav class="header__menu">
-						<ul>
-							<li><a href="/soundcloud/users?cmd=login">Sign in</a></li>
-							<li><a href="/soundcloud/users?cmd=join" class="create__btn">Create account</a></li>
-						</ul>
-					</nav>
+					<div class="main__menu">
+						<nav class="header__menu">
+							<ul>
+								<li><a href="/soundcloud/users?cmd=login">Sign in</a></li>
+								<li><a href="/soundcloud/users?cmd=join" class="create__btn">Create account</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
 			<div class="canvas__open">
