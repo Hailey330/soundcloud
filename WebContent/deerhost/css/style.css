@@ -1738,6 +1738,11 @@ ol {
 	margin-bottom: 10px;
 }
 
+.blog__stream__title {
+	font-weight: 300px;
+	margin-bottom: 10px;
+}
+
 .blog__subtitle {
 	margin-bottom: 40px;
 }

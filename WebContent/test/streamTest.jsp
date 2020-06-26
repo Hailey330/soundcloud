@@ -33,6 +33,8 @@
 <link rel="stylesheet" type="text/css" href="/soundcloud/login/css/util.css">
 <link rel="stylesheet" type="text/css" href="/soundcloud/login/css/main.css">
 
+<link rel="stylesheet" href="/soundcloud/music/style.css">
+
 </head>
 
 <body>
@@ -122,40 +124,51 @@
 			<div class="row">
 				<div class="col-lg-9">
 					<div class="blog__header">
-						<div class="blog__title">
-							<h6>Hear the latest posts from the people you're following</h6>
+						<div class="blog__stream__title">
+							<h5>Hear the latest posts from the people you’re following:</h5>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-4"></div>
-					</div>
+						<!-- Single Welcome Slide -->
+							<div class="container h-100">
+								<div class="row h-100 align-items-center">
+									<div class="col-10">
 
-
-					<div class="sound__waveform">
-						<div class="waveform loaded">
-							<div class="waveform__layer waveform__scene">
-								<canvas aria-hidden="true" class="g-box-full sceneLayer" width="644" height="60"></canvas>
-								<canvas aria-hidden="true" class="g-box-full sceneLayer waveformCommentsNode loaded" width="644" height="60"></canvas>
-								<canvas aria-hidden="true" class="g-box-full sceneLayer" width="644" height="60" style=""></canvas>
-							</div>
-							<div class="commentPlaceholder g-z-index-content">
-								<div class="commentPlaceholder__avatar">
-									<span style="background-image: url(https://i1.sndcdn.com/avatars-000334380658-j9enab-t20x20.jpg); width: 20px; height: 20px;" class="sc-artwork sc-artwork-placeholder-5  "
-										aria-label="민경’s avatar" aria-role="img" aria-hidden="true"></span>
+										<!-- Welcome Music Area -->
+										<div class="poca-music-area mt-100 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
+											<div class="poca-music-thumbnail">
+												<img src="/soundcloud/music/img/bg-img/4.jpg" alt="">
+											</div>
+											<div class="poca-music-content">
+												<div class="music-meta-data">
+													<p>
+														<a href="#" class="music-author">Admin</a>
+													</p>
+												</div>
+												<h6>Episode 201 - The Last Blockbuster</h6>
+												<!-- Music Player -->
+												<div class="poca-music-player">
+													<audio preload="auto" controls>
+														<source src="/soundcloud/music/audio/dummy-audio.mp3">
+													</audio>
+												</div>
+												<!-- Likes, Share & Download -->
+												<div class="likes-share-download d-flex align-items-center justify-content-between">
+													<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Like (29)</a>
+													<div>
+														<a href="#" class="mr-4"><i class="fa fa-share-alt" aria-hidden="true"></i> Share(04)</a> <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download (12)</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="commentPopover darkText smallAvatar small">
-								<div class="commentPopover__scrub">
-									<div class="commentPopover__playableArea" style="width: 100%"></div>
-								</div>
 
-								<div class="commentPopover__wrapper g-opacity-transition">
-									<div class="commentPopover__avatar sc-artwork" style="width: 10px; height: 10px;"></div>
-									<a class="commentPopover__username sc-truncate" href=""></a>
-									<p class="commentPopover__body sc-truncate"></p>
-								</div>
-							</div>
-						</div>
+
+						<!-- ***** Welcome Area End ***** -->
+
+
 					</div>
 				</div>
 				<div class="col-lg-3">
@@ -235,6 +248,7 @@
 					<p>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
+						
 						<script>
 							document.write(new Date().getFullYear());
 						</script>
@@ -262,7 +276,17 @@
 	<script src="/soundcloud/login/vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="/soundcloud/login/vendor/countdowntime/countdowntime.js"></script>
 	<script src="/soundcloud/login/js/main.js"></script>
-	<script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
+
+	<!-- jQuery js -->
+	<script src="/soundcloud/music/js/jquery.min.js"></script>
+	<!-- Popper js -->
+	<script src="/soundcloud/music/js/popper.min.js"></script>
+	<!-- Bootstrap js -->
+	<script src="/soundcloud/music/js/bootstrap.min.js"></script>
+	<!-- All js -->
+	<script src="/soundcloud/music/js/poca.bundle.js"></script>
+	<!-- Active js -->
+	<script src="/soundcloud/music/js/default-assets/active.js"></script>
 
 
 </body>
