@@ -45,11 +45,12 @@ public class UsersRepository {
 				user.setUserProfile(rs.getString("userProfile"));
 				user.setUserRole(rs.getString("userRole"));
 				user.setCreateDate(rs.getTimestamp("createDate"));
+
+				return user;
 			}
-			return user;
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println(TAG + "findByUsernameAndPassword : " + e.getMessage());
+			System.out.println(TAG + "findByUsername : " + e.getMessage());
 		} finally {
 			DBConn.close(conn, pstmt, rs);
 		}

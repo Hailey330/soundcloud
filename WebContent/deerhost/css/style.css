@@ -279,7 +279,6 @@ ol {
 	-webkit-appearance: none;
 }
 
-
 .sc-list-nostyle {
 	list-style: none;
 	margin: 0;
@@ -395,6 +394,10 @@ ol {
 	float: right;
 	text-align: center;
 	padding-top: 30px;
+}
+
+.main__menu {
+	float: right;
 }
 
 .header__menu ul li {
@@ -1733,6 +1736,11 @@ ol {
 }
 
 .blog__title {
+	margin-bottom: 10px;
+}
+
+.blog__stream__title {
+	font-weight: 300px;
 	margin-bottom: 10px;
 }
 

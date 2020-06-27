@@ -91,7 +91,7 @@
 						<a href="/soundcloud/main?cmd=home"><img src="deerhost/img/logo-white-cloud.png" alt=""></a>
 					</div>
 				</div>
-				<div class="col-lg-8 col-md-8">
+				<div class="col-lg-9 col-md-9">
 					<nav class="header__menu">
 						<ul>
 							<li><a href="/soundcloud/main?cmd=home">Home</a></li>
@@ -121,7 +121,7 @@
 	<section class="blog-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8">
+				<div class="col-lg-9">
 					<div class="blog__header">
 						<div class="blog__title">
 							<h4>More of what you like</h4>
@@ -224,7 +224,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-3">
 					<div class="blog__sidebar">
 						<div class="blog__sidebar__item">
 							<div class="sidebar__title">
@@ -319,21 +319,14 @@
 	<script src="deerhost/js/jquery.slicknav.js"></script>
 	<script src="deerhost/js/owl.carousel.min.js"></script>
 	<script src="deerhost/js/main.js"></script>
-	<!--===============================================================================================-->
 	<script src="login/vendor/jquery/jquery-3.2.1.min.js"></script>
-	<!--===============================================================================================-->
 	<script src="login/vendor/animsition/js/animsition.min.js"></script>
-	<!--===============================================================================================-->
 	<script src="login/vendor/bootstrap/js/popper.js"></script>
 	<script src="login/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--===============================================================================================-->
 	<script src="login/vendor/select2/select2.min.js"></script>
-	<!--===============================================================================================-->
 	<script src="login/vendor/daterangepicker/moment.min.js"></script>
 	<script src="login/vendor/daterangepicker/daterangepicker.js"></script>
-	<!--===============================================================================================-->
 	<script src="login/vendor/countdowntime/countdowntime.js"></script>
-	<!--===============================================================================================-->
 	<script src="login/js/main.js"></script>
 </body>
 
