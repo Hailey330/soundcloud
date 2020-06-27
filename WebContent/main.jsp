@@ -118,7 +118,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="hero__item set-bg" data-setbg="deerhost/img/hero/hero-4.jpg">
+			<div class="hero__item set-bg" data-setbg="deerhost/img/hero/hero-5.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6">

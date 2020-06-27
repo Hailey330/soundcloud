@@ -278,10 +278,6 @@ ol {
 	position: relative;
 	-webkit-appearance: none;
 }
-.header__menu>li{
-	float: left;
-	position: relative;
-}
 
 
 .sc-list-nostyle {
@@ -396,6 +392,7 @@ ol {
 }
 
 .header__menu {
+	float: right;
 	text-align: center;
 	padding-top: 30px;
 }

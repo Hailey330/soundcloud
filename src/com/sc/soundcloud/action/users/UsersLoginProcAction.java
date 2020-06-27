@@ -33,7 +33,7 @@ public class UsersLoginProcAction implements Action {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 
-		// 2. DB 연결 - UsersRepository findByUsername 호출
+		// 2. DB 연결 - UsersRepository findByUsernameAndPassword 호출
 		UsersRepository usersRepository = UsersRepository.getInstance();
 		Users user = usersRepository.findByUsernameAndPassword(username, password);
 		System.out.println("LOGIN PROC : user : " + user);
