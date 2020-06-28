@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<%@ include file="../include/mainSign/nav.jsp"%>
+<%@ include file="../include/user/nav.jsp"%>
 
 <div class="limiter">
 	<div class="container-login100" style="background-image: url('/soundcloud/login/images/main.jpeg');">
@@ -43,6 +43,6 @@
 </div>
 
 
-<%@ include file="../include/mainSign/footer.jsp"%>
+<%@ include file="../include/user/footer.jsp"%>
 
 

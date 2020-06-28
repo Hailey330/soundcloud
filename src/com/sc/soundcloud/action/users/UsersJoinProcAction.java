@@ -48,9 +48,9 @@ public class UsersJoinProcAction implements Action {
 
 		// 4. login.jsp 이동
 		if (result == 1) {
-			Script.href("Join Success", "/soundcloud/users?cmd=login", response);
+			Script.href("Welcome, soundcloud! 성공적으로 가입되셨습니다.", "/soundcloud/users?cmd=login", response);
 		} else {
-			Script.back("ERROR!", response);
+			Script.back("ERROR! 다시 진행해주세요.", response);
 		}
 	}
 

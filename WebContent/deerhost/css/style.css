@@ -391,7 +391,6 @@ ol {
 }
 
 .header__menu {
-	float: right;
 	text-align: center;
 	padding-top: 30px;
 }
@@ -403,7 +402,7 @@ ol {
 .header__menu ul li {
 	list-style: none;
 	display: inline-block;
-	margin-right: 40px;
+	margin-right: 80px;
 	position: relative;
 }
 
@@ -1739,9 +1738,10 @@ ol {
 	margin-bottom: 10px;
 }
 
-.blog__stream__title {
-	font-weight: 300px;
+.blog__stream__title>h5{
+	font-weight: 300;
 	margin-bottom: 10px;
+	color: #999;
 }
 
 .blog__subtitle {

@@ -1,4 +1,4 @@
-package com.sc.soundcloud.controller;
+package com.sc.soundcloud.test;
 
 import java.io.IOException;
 
@@ -10,17 +10,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.sc.soundcloud.action.Action;
-import com.sc.soundcloud.action.board.BoardStreamAction;
-import com.sc.soundcloud.action.board.BoardFileUploadAction;
-import com.sc.soundcloud.action.board.BoardFileUploadProcAction;
-import com.sc.soundcloud.action.users.UsersJoinAction;
 
-@WebServlet("/board")
-public class BoardController extends HttpServlet {
+@WebServlet("/boardTest")
+public class BoardControllerTest extends HttpServlet {
 	private final static String TAG = "BoardController : ";
 	private static final long serialVersionUID = 1L;
        
-    public BoardController() {
+    public BoardControllerTest() {
         super();
     }
 
@@ -43,14 +39,9 @@ public class BoardController extends HttpServlet {
 	}
 	
 	public Action router(String cmd) {
-		if(cmd.equals("stream")) {
-			return new BoardStreamAction();
-		} else if(cmd.equals("fileUpload")) {
-			// 파일 업로드 -> fileProc -> write -> writeProc -> stream 목록에 뿌림
-			return new BoardFileUploadAction();
-		} else if(cmd.equals("fileUploadProc")) {
-			return new BoardFileUploadProcAction(); 
-		}
+		if(cmd.equals("profileUploadProcTest")) {
+			return new profileUploadProcTest();
+		} 
 		return null;
 	}
 

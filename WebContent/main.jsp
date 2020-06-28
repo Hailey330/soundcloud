@@ -152,7 +152,7 @@
 					<div class="register__text">
 						<div class="section-title">
 							<h3>
-								Hear what’s trending for free</br> in the SoundCloud community
+								Hear what’s trending for free<br> in the SoundCloud community
 							</h3>
 						</div>
 						<div class="register__form">

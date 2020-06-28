@@ -8,7 +8,7 @@
 <meta name="keywords" content="Deerhost, unica, creative, html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Discover on SoundCloud</title>
+<title>Your stream on SoundCloud</title>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -129,23 +129,23 @@
 						</div>
 					</div>
 					<div class="row">
-						<!-- Single Welcome Slide -->
+						
 							<div class="container h-100">
 								<div class="row h-100 align-items-center">
 									<div class="col-10">
 
 										<!-- Welcome Music Area -->
-										<div class="poca-music-area mt-100 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
+										<div class="poca-music-area mt-20 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
 											<div class="poca-music-thumbnail">
 												<img src="/soundcloud/music/img/bg-img/4.jpg" alt="">
 											</div>
 											<div class="poca-music-content">
 												<div class="music-meta-data">
 													<p>
-														<a href="#" class="music-author">Admin</a>
+														<a href="#" class="music-author">creator</a>
 													</p>
 												</div>
-												<h6>Episode 201 - The Last Blockbuster</h6>
+												<h6> 노래 제목 </h6>
 												<!-- Music Player -->
 												<div class="poca-music-player">
 													<audio preload="auto" controls>
@@ -154,9 +154,9 @@
 												</div>
 												<!-- Likes, Share & Download -->
 												<div class="likes-share-download d-flex align-items-center justify-content-between">
-													<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Like (29)</a>
+													<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 29 </a>
 													<div>
-														<a href="#" class="mr-4"><i class="fa fa-share-alt" aria-hidden="true"></i> Share(04)</a> <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download (12)</a>
+														<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i> 17.5K </a> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
 													</div>
 												</div>
 											</div>
@@ -165,10 +165,218 @@
 								</div>
 							</div>
 
+						<div class="container h-100">
+							<div class="row h-100 align-items-center">
+								<div class="col-10">
 
-						<!-- ***** Welcome Area End ***** -->
+									<!-- Welcome Music Area -->
+									<div class="poca-music-area mt-30 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
+										<div class="poca-music-thumbnail">
+											<img src="/soundcloud/music/img/bg-img/4.jpg" alt="">
+										</div>
+										<div class="poca-music-content">
+											<div class="music-meta-data">
+												<p>
+													<a href="#" class="music-author">creator</a>
+												</p>
+											</div>
+											<h6> 노래 제목 </h6>
+											<!-- Music Player -->
+											<div class="poca-music-player">
+												<audio preload="auto" controls>
+													<source src="/soundcloud/music/audio/dummy-audio.mp3">
+												</audio>
+											</div>
+											<!-- Likes, Share & Download -->
+											<div class="likes-share-download d-flex align-items-center justify-content-between">
+												<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 29 </a>
+												<div>
+													<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i> 17.5K </a> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
+<div class="container h-100">
+							<div class="row h-100 align-items-center">
+								<div class="col-10">
 
+									<!-- Welcome Music Area -->
+									<div class="poca-music-area mt-30 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
+										<div class="poca-music-thumbnail">
+											<img src="/soundcloud/music/img/bg-img/4.jpg" alt="">
+										</div>
+										<div class="poca-music-content">
+											<div class="music-meta-data">
+												<p>
+													<a href="#" class="music-author">creator</a>
+												</p>
+											</div>
+											<h6> 노래 제목 </h6>
+											<!-- Music Player -->
+											<div class="poca-music-player">
+												<audio preload="auto" controls>
+													<source src="/soundcloud/music/audio/dummy-audio.mp3">
+												</audio>
+											</div>
+											<!-- Likes, Share & Download -->
+											<div class="likes-share-download d-flex align-items-center justify-content-between">
+												<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 29 </a>
+												<div>
+													<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i> 17.5K </a> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="container h-100">
+							<div class="row h-100 align-items-center">
+								<div class="col-10">
+
+									<!-- Welcome Music Area -->
+									<div class="poca-music-area mt-30 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
+										<div class="poca-music-thumbnail">
+											<img src="/soundcloud/music/img/bg-img/4.jpg" alt="">
+										</div>
+										<div class="poca-music-content">
+											<div class="music-meta-data">
+												<p>
+													<a href="#" class="music-author">creator</a>
+												</p>
+											</div>
+											<h6> 노래 제목 </h6>
+											<!-- Music Player -->
+											<div class="poca-music-player">
+												<audio preload="auto" controls>
+													<source src="/soundcloud/music/audio/dummy-audio.mp3">
+												</audio>
+											</div>
+											<!-- Likes, Share & Download -->
+											<div class="likes-share-download d-flex align-items-center justify-content-between">
+												<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 29 </a>
+												<div>
+													<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i> 17.5K </a> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="container h-100">
+							<div class="row h-100 align-items-center">
+								<div class="col-10">
+
+									<!-- Welcome Music Area -->
+									<div class="poca-music-area mt-30 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
+										<div class="poca-music-thumbnail">
+											<img src="/soundcloud/music/img/bg-img/4.jpg" alt="">
+										</div>
+										<div class="poca-music-content">
+											<div class="music-meta-data">
+												<p>
+													<a href="#" class="music-author">creator</a>
+												</p>
+											</div>
+											<h6> 노래 제목 </h6>
+											<!-- Music Player -->
+											<div class="poca-music-player">
+												<audio preload="auto" controls>
+													<source src="/soundcloud/music/audio/dummy-audio.mp3">
+												</audio>
+											</div>
+											<!-- Likes, Share & Download -->
+											<div class="likes-share-download d-flex align-items-center justify-content-between">
+												<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 29 </a>
+												<div>
+													<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i> 17.5K </a> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="container h-100">
+							<div class="row h-100 align-items-center">
+								<div class="col-10">
+
+									<!-- Welcome Music Area -->
+									<div class="poca-music-area mt-30 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
+										<div class="poca-music-thumbnail">
+											<img src="/soundcloud/music/img/bg-img/4.jpg" alt="">
+										</div>
+										<div class="poca-music-content">
+											<div class="music-meta-data">
+												<p>
+													<a href="#" class="music-author">creator</a>
+												</p>
+											</div>
+											<h6> 노래 제목 </h6>
+											<!-- Music Player -->
+											<div class="poca-music-player">
+												<audio preload="auto" controls>
+													<source src="/soundcloud/music/audio/dummy-audio.mp3">
+												</audio>
+											</div>
+											<!-- Likes, Share & Download -->
+											<div class="likes-share-download d-flex align-items-center justify-content-between">
+												<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 29 </a>
+												<div>
+													<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i> 17.5K </a> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="container h-100">
+							<div class="row h-100 align-items-center">
+								<div class="col-10">
+
+									<!-- Welcome Music Area -->
+									<div class="poca-music-area mt-30 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
+										<div class="poca-music-thumbnail">
+											<img src="/soundcloud/music/img/bg-img/4.jpg" alt="">
+										</div>
+										<div class="poca-music-content">
+											<div class="music-meta-data">
+												<p>
+													<a href="#" class="music-author">creator</a>
+												</p>
+											</div>
+											<h6> 노래 제목 </h6>
+											<!-- Music Player -->
+											<div class="poca-music-player">
+												<audio preload="auto" controls>
+													<source src="/soundcloud/music/audio/dummy-audio.mp3">
+												</audio>
+											</div>
+											<!-- Likes, Share & Download -->
+											<div class="likes-share-download d-flex align-items-center justify-content-between">
+												<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 29 </a>
+												<div>
+													<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i> 17.5K </a> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
 					</div>
 				</div>
 				<div class="col-lg-3">
@@ -267,6 +475,7 @@
 	<script src="/soundcloud/deerhost/js/jquery.slicknav.js"></script>
 	<script src="/soundcloud/deerhost/js/owl.carousel.min.js"></script>
 	<script src="/soundcloud/deerhost/js/main.js"></script>
+
 	<script src="/soundcloud/login/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="/soundcloud/login/vendor/animsition/js/animsition.min.js"></script>
 	<script src="/soundcloud/login/vendor/bootstrap/js/popper.js"></script>
@@ -277,15 +486,10 @@
 	<script src="/soundcloud/login/vendor/countdowntime/countdowntime.js"></script>
 	<script src="/soundcloud/login/js/main.js"></script>
 
-	<!-- jQuery js -->
 	<script src="/soundcloud/music/js/jquery.min.js"></script>
-	<!-- Popper js -->
 	<script src="/soundcloud/music/js/popper.min.js"></script>
-	<!-- Bootstrap js -->
 	<script src="/soundcloud/music/js/bootstrap.min.js"></script>
-	<!-- All js -->
 	<script src="/soundcloud/music/js/poca.bundle.js"></script>
-	<!-- Active js -->
 	<script src="/soundcloud/music/js/default-assets/active.js"></script>
 
 

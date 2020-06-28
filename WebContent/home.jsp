@@ -22,16 +22,8 @@
 <link rel="stylesheet" href="deerhost/css/slicknav.min.css" type="text/css">
 <link rel="stylesheet" href="deerhost/css/style.css" type="text/css">
 
-<link rel="stylesheet" type="text/css" href="login/vendor/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="login/fonts/iconic/css/material-design-iconic-font.min.css">
-<link rel="stylesheet" type="text/css" href="login/vendor/animate/animate.css">
-<link rel="stylesheet" type="text/css" href="login/vendor/css-hamburgers/hamburgers.min.css">
-<link rel="stylesheet" type="text/css" href="login/vendor/animsition/css/animsition.min.css">
-<link rel="stylesheet" type="text/css" href="login/vendor/select2/select2.min.css">
-<link rel="stylesheet" type="text/css" href="login/vendor/daterangepicker/daterangepicker.css">
-<link rel="stylesheet" type="text/css" href="login/css/util.css">
-<link rel="stylesheet" type="text/css" href="login/css/main.css">
+<link rel="stylesheet" type="text/css" href="/soundcloud/login/css/main.css">
+
 
 </head>
 
@@ -48,7 +40,7 @@
 			<span class="fa fa-times-circle-o"></span>
 		</div>
 		<div class="offcanvas__logo">
-			<a href="#"><img src="img/logo.png" alt=""></a>
+			<a href="#"><img src="#" alt=""></a>
 		</div>
 		<nav class="offcanvas__menu mobile-menu">
 			<ul>
@@ -95,7 +87,7 @@
 					<nav class="header__menu">
 						<ul>
 							<li><a href="/soundcloud/main?cmd=home">Home</a></li>
-							<li><a href="#">Stream</a></li>
+							<li><a href="/soundcloud/board?cmd=stream">Stream</a></li>
 							<li><a href="#">Library</a></li>
 							<li class="active"><a href="#">Upload</a></li>
 							<li><a href="#">YOURS</a>
@@ -293,25 +285,6 @@
 	</section>
 	<!-- Blog Section End -->
 
-	<!-- Footer Section Begin -->
-	<footer class="footer-section">
-		<div class="footer__text">
-			<div class="container">
-				<div class="footer__text-copyright">
-					<p>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>
-							document.write(new Date().getFullYear());
-						</script>
-						All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Footer Section End -->
 
 	<!-- Js Plugins -->
 	<script src="deerhost/js/jquery-3.3.1.min.js"></script>
@@ -319,15 +292,7 @@
 	<script src="deerhost/js/jquery.slicknav.js"></script>
 	<script src="deerhost/js/owl.carousel.min.js"></script>
 	<script src="deerhost/js/main.js"></script>
-	<script src="login/vendor/jquery/jquery-3.2.1.min.js"></script>
-	<script src="login/vendor/animsition/js/animsition.min.js"></script>
-	<script src="login/vendor/bootstrap/js/popper.js"></script>
-	<script src="login/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="login/vendor/select2/select2.min.js"></script>
-	<script src="login/vendor/daterangepicker/moment.min.js"></script>
-	<script src="login/vendor/daterangepicker/daterangepicker.js"></script>
-	<script src="login/vendor/countdowntime/countdowntime.js"></script>
-	<script src="login/js/main.js"></script>
+	
 </body>
 
 </html>
