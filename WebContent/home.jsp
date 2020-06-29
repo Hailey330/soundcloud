@@ -25,6 +25,7 @@
 <link rel="stylesheet" type="text/css" href="/soundcloud/login/css/main.css">
 
 
+
 </head>
 
 <body>
@@ -58,8 +59,8 @@
 			</ul>
 		</nav>
 		<div id="mobile-menu-wrap"></div>
-		
-		
+
+
 	</div>
 	<!-- Offcanvas Menu End -->
 
@@ -120,8 +121,59 @@
 										<a href="#">Godless Heathens</a>
 									</h5>
 									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
+										<li>Jonathan Doe</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="blog__item">
+								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test2.jpg"></div>
+								<div class="blog__text">
+									<h5>
+										<a href="#">Godless Heathens</a>
+									</h5>
+									<ul>
+										<li>Jonathan Doe</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="blog__item">
+								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test3.jpg"></div>
+								<div class="blog__text">
+									<h5>
+										<a href="#">Godless Heathens</a>
+									</h5>
+									<ul>
+										<li>Jonathan Doe</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="blog__item">
+								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test4.jpg"></div>
+								<div class="blog__text">
+									<h5>
+										<a href="#">Godless Heathens</a>
+									</h5>
+									<ul>
+										<li>Jonathan Doe</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="blog__item">
+								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test5.jpg"></div>
+								<div class="blog__text">
+									<h5>
+										<a href="#">Godless Heathens</a>
+									</h5>
+									<ul>
+										<li>Jonathan Doe</li>
 									</ul>
 								</div>
 							</div>
@@ -134,64 +186,7 @@
 										<a href="#">Godless Heathens</a>
 									</h5>
 									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<div class="blog__item">
-								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test.jpg"></div>
-								<div class="blog__text">
-									<h5>
-										<a href="#">Godless Heathens</a>
-									</h5>
-									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<div class="blog__item">
-								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test.jpg"></div>
-								<div class="blog__text">
-									<h5>
-										<a href="#">Godless Heathens</a>
-									</h5>
-									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<div class="blog__item">
-								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test.jpg"></div>
-								<div class="blog__text">
-									<h5>
-										<a href="#">Godless Heathens</a>
-									</h5>
-									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<div class="blog__item">
-								<div class="blog__pic set-bg" data-setbg="deerhost/img/cover-test.jpg"></div>
-								<div class="blog__text">
-									<h5>
-										<a href="#">Godless Heathens</a>
-									</h5>
-									<ul>
-										<li><i class="fa fa-user"></i> Jonathan Doe</li>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
+										<li>Jonathan Doe</li>
 									</ul>
 								</div>
 							</div>
@@ -281,6 +276,10 @@
 	<script src="deerhost/js/jquery.slicknav.js"></script>
 	<script src="deerhost/js/owl.carousel.min.js"></script>
 	<script src="deerhost/js/main.js"></script>
+
+	<script src="/soundcloud/music/js/jquery.min.js"></script>
+	<script src="/soundcloud/music/js/poca.bundle.js"></script>
+	<script src="/soundcloud/music/js/default-assets/active.js"></script>
 
 </body>
 

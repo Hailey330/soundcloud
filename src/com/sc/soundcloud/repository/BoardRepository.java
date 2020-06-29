@@ -27,18 +27,46 @@ public class BoardRepository {
 	private PreparedStatement pstmt = null;
 	private ResultSet rs = null;
 
-	public int save(Board board) {
-		final String SQL = "";
+	
+	public int update(int id, String title, String content, String fileImage) {
+		final String SQL = "UPDATE board SET title = ?, content = ?, fileImage = ? WHERE id = ?";
 		
 		try {
 			conn = DBConn.getConnection();
 			pstmt = conn.prepareStatement(SQL);
 			// 물음표 완성하기
-			
+			pstmt.setString(1, title);
+			pstmt.setString(2, content);
+			pstmt.setString(3, fileImage);
+			pstmt.setInt(4, id);
 			return pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println(TAG + "save : " +e.getMessage());
+			System.out.println(TAG + "update(id, title, content, fileImage) : " +e.getMessage());
+		} finally {
+			DBConn.close(conn, pstmt);
+		}
+		return -1;
+	}
+	
+	public int save(Board board) {
+		final String SQL = "INSERT INTO board(id, userId, title, content, likeCount, playCount, musicFile, fileImage, createDate) VALUES(board_seq.nextval, ?, ?, ?, ?, ?, ?, ?, sysdate)";
+		
+		try {
+			conn = DBConn.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			// 물음표 완성하기
+			pstmt.setInt(1, board.getUserId());
+			pstmt.setString(2, board.getTitle());
+			pstmt.setString(3, board.getContent());
+			pstmt.setInt(4, board.getLikeCount());
+			pstmt.setInt(5, board.getPlayCount());
+			pstmt.setString(6, board.getMusicFile());
+			pstmt.setString(7, board.getFileImage());
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(TAG+"save : "+e.getMessage());
 		} finally {
 			DBConn.close(conn, pstmt);
 		}
@@ -46,13 +74,16 @@ public class BoardRepository {
 	}
 	
 	public int update(Board board) {
-		final String SQL = "";
+		final String SQL = "UPDATE board SET title = ?, content = ?, fileImage = ? WHERE userid = ?";
 		
 		try {
 			conn = DBConn.getConnection();
 			pstmt = conn.prepareStatement(SQL);
 			// 물음표 완성하기
-			
+			pstmt.setString(1, board.getTitle());
+			pstmt.setString(2, board.getContent());
+			pstmt.setString(3, board.getFileImage());
+			pstmt.setInt(4, board.getUserId());
 			return pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();

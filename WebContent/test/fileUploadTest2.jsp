@@ -1,5 +1,31 @@
+<%@page import="java.io.File"%>
+<%@page import="java.util.Enumeration"%>
+<%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
+<%@page import="com.oreilly.servlet.MultipartRequest"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%
+	String realPath = request.getServletContext().getRealPath("/upload");
+	System.out.println("realPath : " + realPath);
+	int maxSize = 10*1024*1024;
+	
+	MultipartRequest multi = new MultipartRequest
+			(
+			request, 
+			realPath, 
+			maxSize, 
+			"UTF-8",
+			new DefaultFileRenamePolicy()
+			);
+	// request 되는 순간 null 로 변함
+	String fileName = multi.getFilesystemName("uploadFile");
+	String original = multi.getOriginalFileName("uploadFile");
+	fileName = request.getParameter("fileName");
+	String type = multi.getContentType("uploadFile");
+	File file = multi.getFile("uploadFile");
+	System.out.println("");
+	
+	
+%>
 
 <!DOCTYPE html>
 <html lang="zxx">
@@ -10,7 +36,7 @@
 <meta name="keywords" content="Deerhost, unica, creative, html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Upload your music &amp; audio and share it with the world. on SoundCloud</title>
+<title>FileUploadTest2 - 파일 받아서 write</title>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -111,31 +137,21 @@
 	<section class="blog-section">
 		<div class="container">
 			<div class="col-lg-13">
-				<form action="/soundcloud/board?cmd=writeProc" method="post" enctype="multipart/form-data">
-					<div class="l-main-upload">
-						<div class="uploadMain">
-							<div class="detail-submit">
+				<input name="fileName" value="<%=fileName%>">
 
-								<!-- 이미지 업로드 -->
-								<div class="ds-image-box">
-									<img> <label class="imageLabel">Upload Image <input class="h-input" type="file" name="musicImage" id="musicImage">
-									</label>
-								</div>
 
-								<!-- 글쓰기 -->
-								<div class="track-detail-form">
-									<p class="tdf-text tdf-required">Title</p>
-									<input class="txt-input" type="text" name="title" id="title">
-									<p class="tdf-text">Description</p>
-									<textarea class="txt-input txta active-ring" name="content" id="content"></textarea>
-									<input type="hidden" name="id" value="${sessionScope.principal.id}" /> 
-									<input class="inputLabel" type="submit"
-										value="create">
-								</div>
-							</div>
-						</div>
+				<div class="detail-submit">
+					<div class="ds-image-box">
+						<img><label class="imageLabel">Upload Image<input class="h-input" type="file"></label>
 					</div>
-				</form>
+					<div class="track-detail-form">
+						<p class="tdf-text tdf-required">Title</p>
+						<input class="txt-input" type="text" value="">
+						<p class="tdf-text">Description</p>
+						<textarea class="txt-input txta active-ring"></textarea>
+						<input class="inputLabel" type="submit" value="create">
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -144,8 +160,8 @@
 
 	<!-- Js Plugins -->
 	<script src="/soundcloud/deerhost/js/jquery-3.3.1.min.js"></script>
-	<script src="/soundcloud/deerhost/js/jquery.slicknav.js"></script>
 	<script src="/soundcloud/deerhost/js/bootstrap.min.js"></script>
+	<script src="/soundcloud/deerhost/js/jquery.slicknav.js"></script>
 	<script src="/soundcloud/deerhost/js/owl.carousel.min.js"></script>
 	<script src="/soundcloud/deerhost/js/main.js"></script>
 

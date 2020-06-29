@@ -8,7 +8,7 @@
 <meta name="keywords" content="Deerhost, unica, creative, html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>파일 업로드 테스트</title>
+<title>FileUploadTest1 - 파일 보내기</title>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -30,7 +30,50 @@
 </head>
 
 <body>
-	
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Offcanvas Menu Begin -->
+	<div class="offcanvas__menu__overlay"></div>
+	<div class="offcanvas__menu__wrapper">
+		<div class="canvas__close">
+			<span class="fa fa-times-circle-o"></span>
+		</div>
+		<div class="offcanvas__logo">
+			<a href="#"><img src="img/logo.png" alt=""></a>
+		</div>
+		<nav class="offcanvas__menu mobile-menu">
+			<ul>
+				<li><a href="/soundcloud/main?cmd=home">Home</a></li>
+				<li><a href="/soundcloud/board?cmd=stream">Stream</a></li>
+				<li><a href="/soundcloud/board?cmd=library">Library</a></li>
+				<li><a href="/soundcloud/board?cmd=fileUpload">Upload</a></li>
+				<li><a href="#">YOURS</a>
+					<ul class="dropdown">
+						<li><a href="/soundcloud/board?cmd=profile">Profile</a></li>
+						<li><a href="/soundcloud/board?cmd=library">Likes</a></li>
+						<li><a href="/soundcloud/board?cmd=library">Following</a></li>
+						<li><a href="/soundcloud/users?cmd=logout">Sign out</a></li>
+					</ul></li>
+			</ul>
+		</nav>
+		<div id="mobile-menu-wrap"></div>
+		<div class="offcanvas__auth">
+			<ul>
+				<li><a href="#"><span class="icon_chat_alt"></span> Live chat</a></li>
+				<li><a href="#"><span class="fa fa-user"></span> Login / Register</a></li>
+			</ul>
+		</div>
+		<div class="offcanvas__info">
+			<ul>
+				<li><span class="icon_phone"></span> +1 123-456-7890</li>
+				<li><span class="fa fa-envelope"></span> Support@gmail.com</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Offcanvas Menu End -->
 
 	<!-- Header Section Begin -->
 	<header class="header-section header-normal">
@@ -46,14 +89,14 @@
 					<nav class="header__menu">
 						<ul>
 							<li><a href="/soundcloud/main?cmd=home">Home</a></li>
-							<li><a href="#">Stream</a></li>
-							<li><a href="#">Library</a></li>
-							<li class="active"><a href="#">Upload</a></li>
+							<li><a href="/soundcloud/board?cmd=stream">Stream</a></li>
+							<li><a href="/soundcloud/board?cmd=library">Library</a></li>
+							<li><a href="/soundcloud/board?cmd=fileUpload">Upload</a></li>
 							<li><a href="#">YOURS</a>
 								<ul class="dropdown">
-									<li><a href="#">Profile</a></li>
-									<li><a href="/soundcloud/board?cmd=Library">Likes</a></li>
-									<li><a href="/soundcloud/board?cmd=Library">Following</a></li>
+									<li><a href="/soundcloud/board?cmd=profile">Profile</a></li>
+									<li><a href="/soundcloud/board?cmd=library">Likes</a></li>
+									<li><a href="/soundcloud/board?cmd=library">Following</a></li>
 									<li><a href="/soundcloud/users?cmd=logout">Sign out</a></li>
 								</ul></li>
 						</ul>
@@ -71,7 +114,7 @@
 	<section class="blog-section">
 		<div class="container">
 			<div class="col-lg-13">
-				<form action="/soundcloud/boardTest?cmd=profileUploadProcTest" method="post" enctype="multipart/form-data">
+				<form action="fileUploadTest2.jsp" method="post" enctype="multipart/form-data">
 					<div class="l-main-upload">
 						<div class="uploadMain">
 							<div class="uploadBackground"></div>
@@ -81,8 +124,9 @@
 										<h1 class="uploadMain__title sc-font-light ">Upload your tracks &amp; albums here</h1>
 										<div class="uploadMain__chooser">
 											<div class="chooseFiles">
-												<label class="chooseFiles__button sc-button sc-button-cta sc-button-large" style="min-width: 300px">Choose files to upload <input class="chooseFiles__input sc-visuallyhidden"
-													name="file" id="file" type="file">
+												<input type="file" id="userFile1" class="chooseFiles__input"><br><br>
+												<label class="chooseFiles__button sc-button sc-button-cta sc-button-large" style="min-width: 300px">Choose files to upload 
+												<input type="submit" class="chooseFiles__input sc-visuallyhidden">
 												</label>
 											</div>
 										</div>
@@ -116,6 +160,8 @@
 								<p class="uploadMain__noticeWithActiveUploads">
 									By uploading, you confirm that your sounds comply with our <a href="/terms-of-use" target="_blank">Terms of Use</a> and you don't infringe anyone else's rights.
 								</p>
+
+
 								<div class="l-footer sc-text-verylight standard sc-border-light-top">
 									<a class="sc-link-verylight" href="/terms-of-use" title="Terms of use">Legal</a>&nbsp;⁃ <a class="sc-link-verylight" href="/pages/privacy" title="Privacy policy">Privacy</a>&nbsp;⁃ <a
 										class="sc-link-verylight" href="/pages/cookies" title="Cookies policy">Cookies</a>&nbsp;⁃ <a class="sc-link-verylight" href="/imprint" title="Company information">Imprint</a>&nbsp;⁃ <a

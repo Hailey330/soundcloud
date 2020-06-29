@@ -15,7 +15,7 @@ public class profileUploadProcTest implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String realPath = request.getServletContext().getRealPath("upload");
+		String realPath = request.getServletContext().getRealPath("/upload");
 		MultipartRequest multi = new MultipartRequest
 				(
 						request, 

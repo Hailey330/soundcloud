@@ -26,6 +26,26 @@ public class UsersRepository {
 	private PreparedStatement pstmt = null;
 	private ResultSet rs = null;
 	
+	public int update(int id, String userFile) {
+		final String SQL = "UPDATE users SET userFile = ? WHERE id = ?";
+		
+		try {
+			conn = DBConn.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			// 물음표 완성하기
+			pstmt.setString(1, userFile);
+			pstmt.setInt(2, id);
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(TAG+"update(int id, String userFile) : "+e.getMessage());
+		} finally {
+			DBConn.close(conn, pstmt);
+		}
+
+		return -1;
+	}
+	
 	public Users findByUsername(String username) { 
 		final String SQL = "SELECT id, username, email, userProfile, userRole, createDate FROM users WHERE username = ?";
 		Users user = null;
@@ -78,7 +98,6 @@ public class UsersRepository {
 				user.setUserRole(rs.getString("userRole"));
 				user.setCreateDate(rs.getTimestamp("createDate"));
 			}
-			System.out.println("REPOSITORY : user : " + user);
 			return user;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -168,17 +187,25 @@ public class UsersRepository {
 		return null;
 	}
 
-	public Users findById(int id) { // 매개 변수가 필요없다. 어차피 다 찾을 거니까
-		final String SQL = "";
-		Users user = new Users();
+	public Users findById(int id) {
+		final String SQL = "SELECT * FROM users WHERE id = ?";
+		Users user = null;
 
 		try {
 			conn = DBConn.getConnection();
 			pstmt = conn.prepareStatement(SQL);
 			// 물음표 완성하기
-
-			// if 돌려서 rs → java 오브젝트에 넣기
-
+			pstmt.setInt(1, id);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				user = Users.builder()
+						.id(rs.getInt("id"))
+						.username(rs.getString("username"))
+						.email(rs.getString("email"))
+						.userRole(rs.getString("userRole"))
+						.createDate(rs.getTimestamp("createDate"))
+						.build();
+			}
 			return user;
 		} catch (Exception e) {
 			e.printStackTrace();

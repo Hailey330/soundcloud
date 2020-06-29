@@ -14,6 +14,7 @@ import com.sc.soundcloud.action.board.BoardFileUploadAction;
 import com.sc.soundcloud.action.board.BoardFileUploadProcAction;
 import com.sc.soundcloud.action.board.BoardStreamAction;
 import com.sc.soundcloud.action.board.BoardWriteAction;
+import com.sc.soundcloud.action.board.BoardWriteProcAction;
 
 @WebServlet("/board")
 public class BoardController extends HttpServlet {
@@ -53,7 +54,7 @@ public class BoardController extends HttpServlet {
 		} else if(cmd.equals("write")) {
 			return new BoardWriteAction(); 
 		} else if(cmd.equals("writeProc")) {
-//			return new BoardWriteProcAction(); 
+			return new BoardWriteProcAction(); 
 		}
 		return null;
 	}

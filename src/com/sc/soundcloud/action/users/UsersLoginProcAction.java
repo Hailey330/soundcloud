@@ -36,7 +36,6 @@ public class UsersLoginProcAction implements Action {
 		// 2. DB 연결 - UsersRepository findByUsernameAndPassword 호출
 		UsersRepository usersRepository = UsersRepository.getInstance();
 		Users user = usersRepository.findByUsernameAndPassword(username, password);
-		System.out.println("LOGIN PROC : user : " + user);
 
 		// 4. home.jsp 이동
 		if (user != null) {

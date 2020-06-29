@@ -1114,7 +1114,15 @@ rotate
 	background-color: transparent !important;
 }
 
+.poca-home-music-player.style-2 .audioplayer {
+	background-color: transparent !important;
+}
+
 .poca-music-player.style-2 .audioplayer .audioplayer-time {
+	color: #ffffff;
+}
+
+.poca-home-music-player.style-2 .audioplayer .audioplayer-time {
 	color: #ffffff;
 }
 

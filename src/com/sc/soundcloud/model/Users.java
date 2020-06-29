@@ -17,7 +17,6 @@ public class Users {
 	private String password;
 	private String email;
 	private String userProfile;	
-	private String userFile;
 	private String userRole;
 	private Timestamp createDate;
 }
