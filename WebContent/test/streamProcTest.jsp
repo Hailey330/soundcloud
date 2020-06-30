@@ -50,7 +50,7 @@
 				<li><a href="/soundcloud/main?cmd=home">Home</a></li>
 				<li><a href="/soundcloud/board?cmd=stream">Stream</a></li>
 				<li><a href="/soundcloud/board?cmd=library">Library</a></li>
-				<li><a href="/soundcloud/board?cmd=fileUpload">Upload</a></li>
+				<li><a href="/soundcloud/board?cmd=write">Upload</a></li>
 				<li><a href="#">YOURS</a>
 					<ul class="dropdown">
 						<li><a href="/soundcloud/board?cmd=profile">Profile</a></li>
@@ -81,7 +81,7 @@
 							<li><a href="/soundcloud/main?cmd=home">Home</a></li>
 							<li><a href="/soundcloud/board?cmd=stream">Stream</a></li>
 							<li><a href="/soundcloud/board?cmd=library">Library</a></li>
-							<li><a href="/soundcloud/board?cmd=fileUpload">Upload</a></li>
+							<li><a href="/soundcloud/board?cmd=write">Upload</a></li>
 							<li><a href="#">YOURS</a>
 								<ul class="dropdown">
 									<li><a href="/soundcloud/board?cmd=profile">Profile</a></li>
@@ -124,11 +124,11 @@
 											<div class="poca-music-content">
 												<div class="music-meta-data">
 													<p>
-														<a href="#" class="music-author">${board.userName}</a>
+														<a href="#" class="music-author">${board.userId}</a>
 													</p>
 												</div>
 												<h6>${board.title}</h6>
-
+												
 												<!-- Music Player -->
 												<div class="poca-music-player">
 													<audio preload="auto" controls>
@@ -140,7 +140,7 @@
 													<a href="#"><i class="fa fa-heart" aria-hidden="true"></i>${board.likeCount}</a>
 													<div>
 														<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i>${board.playCount}</a> 
-														<a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
+														<a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>	
 													</div>
 												</div>
 											</div>
@@ -149,6 +149,54 @@
 								</div>
 							</div>
 						</c:forEach>
+						<!-- ++++++++++++++++++++++ -->
+						
+
+						
+
+						
+
+
+						
+
+
+						
+
+<!-- 						<div class="container h-100"> -->
+<!-- 							<div class="row h-100 align-items-center"> -->
+<!-- 								<div class="col-10"> -->
+
+<!-- 									Welcome Music Area -->
+<!-- 									<div class="poca-music-area mt-30 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms"> -->
+<!-- 										<div class="poca-music-thumbnail"> -->
+<!-- 											<img src="/soundcloud/music/img/bg-img/4.jpg" alt=""> -->
+<!-- 										</div> -->
+<!-- 										<div class="poca-music-content"> -->
+<!-- 											<div class="music-meta-data"> -->
+<!-- 												<p> -->
+<!-- 													<a href="#" class="music-author">creator</a> -->
+<!-- 												</p> -->
+<!-- 											</div> -->
+<!-- 											<h6>노래 제목</h6> -->
+<!-- 											Music Player -->
+<!-- 											<div class="poca-music-player"> -->
+<!-- 												<audio preload="auto" controls> -->
+<!-- 													<source src="/soundcloud/music/audio/dummy-audio.mp3"> -->
+<!-- 												</audio> -->
+<!-- 											</div> -->
+<!-- 											Likes, Share & Download -->
+<!-- 											<div class="likes-share-download d-flex align-items-center justify-content-between"> -->
+<!-- 												<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 29 </a> -->
+<!-- 												<div> -->
+<!-- 													<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i> 17.5K </a> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a> -->
+<!-- 												</div> -->
+<!-- 											</div> -->
+<!-- 										</div> -->
+<!-- 									</div> -->
+<!-- 								</div> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+
 					</div>
 				</div>
 				<div class="col-lg-3">
@@ -220,7 +268,26 @@
 	</section>
 	<!-- Blog Section End -->
 
-	
+	<!-- Footer Section Begin -->
+	<footer class="footer-section">
+		<div class="footer__text">
+			<div class="container">
+				<div class="footer__text-copyright">
+					<p>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+
+						<script>
+							document.write(new Date().getFullYear());
+						</script>
+						All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Section End -->
 
 	<!-- Js Plugins -->
 	<script src="/soundcloud/deerhost/js/jquery-3.3.1.min.js"></script>

@@ -114,6 +114,7 @@
 				<form action="/soundcloud/board?cmd=writeProc" method="post" enctype="multipart/form-data">
 					<div class="l-main-upload">
 						<div class="uploadMain">
+
 							<div class="detail-submit">
 
 								<!-- 이미지 업로드 -->
@@ -123,14 +124,15 @@
 								</div>
 
 								<!-- 글쓰기 -->
+
 								<div class="track-detail-form">
 									<p class="tdf-text tdf-required">Title</p>
 									<input class="txt-input" type="text" name="title" id="title">
 									<p class="tdf-text">Description</p>
 									<textarea class="txt-input txta active-ring" name="content" id="content"></textarea>
-									<input type="hidden" name="id" value="${sessionScope.principal.id}" /> 
-									<input class="inputLabel" type="submit"
-										value="create">
+									<input type="hidden" name="userId" value="${sessionScope.principal.id}" /> 
+									<input type="hidden" name="boardId" value="${param.boardId}" /> 
+									<input class="inputLabel" type="submit" value="create">
 								</div>
 							</div>
 						</div>

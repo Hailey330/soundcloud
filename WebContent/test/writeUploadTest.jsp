@@ -32,11 +32,6 @@
 </head>
 
 <body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
-
 	<!-- Offcanvas Menu Begin -->
 	<div class="offcanvas__menu__overlay"></div>
 	<div class="offcanvas__menu__wrapper">
@@ -116,7 +111,10 @@
 	<section class="blog-section">
 		<div class="container">
 			<div class="col-lg-13">
-				<form action="/soundcloud/board?cmd=fileUploadProc" method="post" enctype="multipart/form-data">
+			
+			<!-- 음악 파일 + 앨범 커버 + 글쓰기 업로드 ::: writeProc 에서 한번에 -->
+			
+				<form action="/soundcloud/board?cmd=writeProc" method="post" enctype="multipart/form-data">
 					<div class="l-main-upload">
 						<div class="uploadMain">
 							<div class="uploadBackground"></div>
@@ -126,24 +124,38 @@
 										<h1 class="uploadMain__title sc-font-light ">Upload your tracks &amp; albums here</h1>
 										<div class="uploadMain__chooser">
 											<div class="chooseFiles">
-												<label class="chooseFiles__button sc-button sc-button-cta sc-button-large sc-button-color" style="min-width: 300px">Choose files to upload 
-												<input type="file" id="musicFile" name="musicFile" class="chooseFiles__input sc-visuallyhidden"> 
-												</label>
-												
-												<br>
-												<input type="hidden" name="userId" value="${sessionScope.principal.id}" /> 
-												<label class="chooseFiles__button sc-button sc-button-cta sc-button-large" style="min-width: 300px">Upload 
-												<input type="submit" class="chooseFiles__input sc-visuallyhidden">
+												<label class="chooseFiles__button sc-button sc-button-cta sc-button-large" style="min-width: 300px"> Choose files to upload 
+												<input type="file" id="musicFile" name="musicFile" class="chooseFiles__input sc-visuallyhidden">
 												</label>
 											</div>
 										</div>
 
 									</div>
 									<aside class="uploadMain__hqNote">
-										Provide FLAC, WAV, ALAC, or AIFF for highest audio quality. <a
-											href="https://help.soundcloud.com/hc/articles/115003452847-Uploading-requirements#typeOfFile" target="_blank" rel="noopener noreferrer">
-											Learn more about lossless HD. </a>
+										Provide FLAC, WAV, ALAC, or AIFF for highest audio quality. <a href="https://help.soundcloud.com/hc/articles/115003452847-Uploading-requirements#typeOfFile" target="_blank"
+											rel="noopener noreferrer"> Learn more about lossless HD. </a>
 									</aside>
+								</div>
+								
+																
+								<div class="detail-submit">
+									<!-- 이미지 업로드 -->
+									<div class="ds-image-box">
+										<img> 
+											<label class="imageLabel">Upload Image 
+												<input class="h-input" type="file" name="musicImage" id="musicImage">
+											</label>
+									</div>
+
+									<!-- 제목, 내용 -->
+									<div class="track-detail-form">
+										<p class="tdf-text tdf-required">Title</p>
+										<input class="txt-input" type="text" name="title" id="title">
+										<p class="tdf-text">Description</p>
+										<textarea class="txt-input txta active-ring" name="content" id="content"></textarea>
+										<input type="hidden" name="id" value="${sessionScope.principal.id}" /> 
+										<input class="inputLabel" type="submit" value="create">
+									</div>
 								</div>
 							</div>
 
@@ -152,36 +164,31 @@
 									<ul class="sc-list-nostyle sc-clearfix"></ul>
 								</div>
 							</div>
-
 							<div class="uploadMain__textAd">
 								<div class="uploadTextAd"></div>
 							</div>
-
 							<div class="uploadMain__foot sc-clearfix">
 								<p class="uploadMain__noticeWithoutActiveUploads">
-									<a href="https://help.soundcloud.com/hc/articles/115003452847#typeOfFile">Supported file types and sizes</a>&nbsp;⁃ <a
-										href="https://help.soundcloud.com/hc/sections/115001112868-Uploading">Upload troubleshooting tips</a>&nbsp;⁃ <a
-										href="https://help.soundcloud.com/hc/sections/115001112968-SoundCloud-s-Copyright-policies">Copyright FAQs</a>
+									<a href="https://help.soundcloud.com/hc/articles/115003452847#typeOfFile">Supported file types and sizes</a>&nbsp;⁃ <a href="https://help.soundcloud.com/hc/sections/115001112868-Uploading">Upload
+										troubleshooting tips</a>&nbsp;⁃ <a href="https://help.soundcloud.com/hc/sections/115001112968-SoundCloud-s-Copyright-policies">Copyright FAQs</a>
 								</p>
 								<p class="uploadMain__noticeWithoutActiveUploads">
-									By uploading, you confirm that your sounds comply with our <a href="/terms-of-use">Terms of Use</a> and you don't infringe anyone else's
-									rights.
+									By uploading, you confirm that your sounds comply with our <a href="/terms-of-use">Terms of Use</a> and you don't infringe anyone else's rights.
 								</p>
 								<p class="uploadMain__noticeWithActiveUploads">
-									By uploading, you confirm that your sounds comply with our <a href="/terms-of-use" target="_blank">Terms of Use</a> and you don't infringe
-									anyone else's rights.
+									By uploading, you confirm that your sounds comply with our <a href="/terms-of-use" target="_blank">Terms of Use</a> and you don't infringe anyone else's rights.
 								</p>
 
 
 								<div class="l-footer sc-text-verylight standard sc-border-light-top">
-									<a class="sc-link-verylight" href="/terms-of-use" title="Terms of use">Legal</a>&nbsp;⁃ <a class="sc-link-verylight" href="/pages/privacy"
-										title="Privacy policy">Privacy</a>&nbsp;⁃ <a class="sc-link-verylight" href="/pages/cookies" title="Cookies policy">Cookies</a>&nbsp;⁃ <a
-										class="sc-link-verylight" href="/imprint" title="Company information">Imprint</a>&nbsp;⁃ <a class="sc-link-verylight"
-										href="//creators.soundcloud.com" target="_blank" title="Creator Resources">Creator Resources</a>&nbsp;⁃ <a class="sc-link-verylight"
-										href="//blog.soundcloud.com" target="_blank" title="SoundCloud blog">Blog</a>&nbsp;⁃ <a class="sc-link-verylight" href="/charts/top"
-										title="Charts">Charts</a>&nbsp;⁃ <a class="sc-link-verylight" href="/popular/searches" title="Popular searches">Popular searches</a>
+									<a class="sc-link-verylight" href="/terms-of-use" title="Terms of use">Legal</a>&nbsp;⁃ <a class="sc-link-verylight" href="/pages/privacy" title="Privacy policy">Privacy</a>&nbsp;⁃ <a
+										class="sc-link-verylight" href="/pages/cookies" title="Cookies policy">Cookies</a>&nbsp;⁃ <a class="sc-link-verylight" href="/imprint" title="Company information">Imprint</a>&nbsp;⁃ <a
+										class="sc-link-verylight" href="//creators.soundcloud.com" target="_blank" title="Creator Resources">Creator Resources</a>&nbsp;⁃ <a class="sc-link-verylight" href="//blog.soundcloud.com"
+										target="_blank" title="SoundCloud blog">Blog</a>&nbsp;⁃ <a class="sc-link-verylight" href="/charts/top" title="Charts">Charts</a>&nbsp;⁃ <a class="sc-link-verylight" href="/popular/searches"
+										title="Popular searches">Popular searches</a>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</form>
@@ -193,8 +200,8 @@
 
 	<!-- Js Plugins -->
 	<script src="/soundcloud/deerhost/js/jquery-3.3.1.min.js"></script>
-	<script src="/soundcloud/deerhost/js/bootstrap.min.js"></script>
 	<script src="/soundcloud/deerhost/js/jquery.slicknav.js"></script>
+	<script src="/soundcloud/deerhost/js/bootstrap.min.js"></script>
 	<script src="/soundcloud/deerhost/js/owl.carousel.min.js"></script>
 	<script src="/soundcloud/deerhost/js/main.js"></script>
 

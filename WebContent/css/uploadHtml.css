@@ -854,14 +854,15 @@ h3.bl-header {
 
 .inputLabel {
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 300;
 	color: white;
 	background-color: #f50;
 	cursor: pointer;
 	padding: 12px 15px;
 	border-radius: 3px;
 	letter-spacing: 0.8px;
-	box-shadow: 1px 1px 5px lightgrey
+	box-shadow: 1px 1px 5px lightgrey;
+	margin-top: 25px;
 }
 
 .extraspace-f {
@@ -899,18 +900,18 @@ h3.bl-header {
 }
 
 .detail-submit {
-	margin-top: 50px;
+	margin-top: 120px;
 	box-sizing: border-box;
 	display: flex;
 	width: 800px;
 	min-width: 500px;
 	max-width: 1240px;
-	border: 1px lightgray solid;
+	border: 2px solid #f2f2f2; 
 	padding: 27px;
-	border-bottom-left-radius: 3px;
-	padding-bottom: 45px;
-	border-top: 4px orange solid;
-	border-bottom-right-radius: 3px
+	padding-bottom: 120px;
+	padding-top: 120px;
+	border-top: 1px solid #f2f2f2;
+	border-bottom-right-radius: 1px;
 }
 
 .auc-special {
@@ -2504,6 +2505,12 @@ input[type=checkbox], input[type=radio] {
 
 .sc-button:visited {
 	color: #333
+}
+
+.chooseFiles__button.sc-button.sc-button-cta.sc-button-large.sc-button-color {
+	background-color: #fff;
+	color: #f50;
+	margin-bottom: 10px;
 }
 
 .sc-button-cta, .sc-button-cta:focus, .sc-button-cta:hover, .sc-button-cta:visited, .sc-button.sc-button-white:focus, .sc-button.sc-button-white:hover {

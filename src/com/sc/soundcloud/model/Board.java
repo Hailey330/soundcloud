@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 public class Board {
 	private int id;
 	private int userId;
+	private String userName;
 	private String title;
 	private String content;
 	private String musicFile;

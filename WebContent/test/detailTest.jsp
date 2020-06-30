@@ -102,125 +102,112 @@
 
 	<!-- Blog Section Begin -->
 	<section class="blog-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-9">
-					<div class="blog__header">
-						<div class="blog__stream__title">
-							<h5>Hear the latest posts from the people you’re following:</h5>
+		<div class="track-show-page">
+			<div class="track-show-container">
+				<div class="track-show-detail">
+					<div class="track-sd-top">
+						<div class="ts-play"></div>
+						<div class="track-sd-info">
+							<a href="/#/users/1">
+								<div class="track-sd-uploader">Diplo</div>
+							</a>
+							<div class="track-sd-title">Get It Right (Feat. Mø &amp; Goldlink) Remix</div>
 						</div>
 					</div>
-					<div class="row">
-
-						<!-- Welcome Music Area -->
-						<c:forEach var="board" items="${boards}">
-							<div class="container h-100">
-								<div class="row h-100 align-items-center">
-									<div class="col-10">
-										<div class="poca-music-area mt-20 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
-											<div class="poca-music-thumbnail">
-												<img src="${board.fileImage}" alt="">
-											</div>
-											<div class="poca-music-content">
-												<div class="music-meta-data">
-													<p>
-														<a href="#" class="music-author">${board.userName}</a>
-													</p>
-												</div>
-												<h6>${board.title}</h6>
-
-												<!-- Music Player -->
-												<div class="poca-music-player">
-													<audio preload="auto" controls>
-														<source src="${board.musicFile}">
-													</audio>
-												</div>
-												<!-- Likes, Share & Download -->
-												<div class="likes-share-download d-flex align-items-center justify-content-between">
-													<a href="#"><i class="fa fa-heart" aria-hidden="true"></i>${board.likeCount}</a>
-													<div>
-														<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i>${board.playCount}</a> 
-														<a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
-													</div>
-												</div>
-											</div>
+					<div class="track-sd-bott">
+						<div>
+							<div id="track-1-waveform">
+								<wave style="display: block; position: relative; user-select: none; height: 100px; overflow: auto hidden;"> <wave
+									style="position: absolute; z-index: 3; left: 0px; top: 0px; bottom: 0px; overflow: hidden; width: 0px; display: block; box-sizing: border-box; border-right: 0px solid rgb(51, 51, 51); pointer-events: none;">
+								<canvas width="671" height="100" style="position: absolute; left: 0px; top: 0px; bottom: 0px; height: 100%; width: 671px;"></canvas>
+								</wave>
+								<canvas width="671" height="100" style="position: absolute; z-index: 2; left: 0px; top: 0px; bottom: 0px; height: 100%; pointer-events: none; width: 671px;"></canvas>
+								</wave>
+								<audio preload="auto" src="https://s3.us-west-1.amazonaws.com/vibeskypro/tracks/audios/000/000/001/original/Get_It_Right_%28Feat._M%C3%B8___Goldlink%29_Remix.mp3?1530392146"
+									style="width: 100%;"></audio>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="track-show-image-container">
+					<img src="https://s3.us-west-1.amazonaws.com/vibeskypro/tracks/images/000/000/001/original/Screenshot_20180402-234123.png?1550293351">
+				</div>
+			</div>
+			<div class="track-show-container-bottom">
+				<div class="tscb-left">
+					<div class="track-show-comment-bar">
+						<div class="comment-container">
+							<div class="comment-form">
+								<form class="cform">
+									<div class="comment-form-user">
+										<img src="https://s3.us-west-1.amazonaws.com/vibeskypro/users/images/000/000/008/original/modernistic_surreal_cubism_pepe.png?1545435612">
+									</div>
+									<div class="comment-input-container">
+										<input class="comment-input" type="text" placeholder="Write a Comment" value="">
+									</div>
+									<input type="submit" class="h-input">
+								</form>
+							</div>
+							<div class="comment-buttons"></div>
+						</div>
+					</div>
+					<div class="button-bar">
+						<div class="controller-btn like-btn">like</div>
+					</div>
+					<div class="ts-uploader-ci">
+						<div class="ts-uc-left">
+							<div class="ts-artist-circle">
+								<a href="/#/users/1"><img src="https://s3.us-west-1.amazonaws.com/vibeskypro/users/images/000/000/001/original/diplo.jpg?1530473530"></a>
+							</div>
+							<a href="/#/users/1"><div class="ts-artist-name">Diplo</div></a>
+							<div class="ts-follow-btn">Follow</div>
+						</div>
+						<div class="ts-uc-right">
+							<div class="ts-track-description">i found the password woot woot</div>
+							<div class="track-show-comment-index">
+								<div class="tsc-container">
+									<div class="posted-comment">
+										<a href="/#/users/4"><div class="comment-uploader-img">
+												<img src="https://s3.us-west-1.amazonaws.com/vibeskypro/users/images/000/000/004/original/beatle.png?1530473994">
+											</div></a>
+										<div class="comment-uploader-body">
+											<a href="/#/users/4"><div>The Beatles</div></a>
+											<div>Wow love it!</div>
 										</div>
+										<div></div>
+									</div>
+									<div class="posted-comment">
+										<a href="/#/users/5"><div class="comment-uploader-img">
+												<img src="https://s3.us-west-1.amazonaws.com/vibeskypro/users/images/000/000/005/original/MGMT_Horizontal_logo.png?1530473729">
+											</div></a>
+										<div class="comment-uploader-body">
+											<a href="/#/users/5"><div>MGMT</div></a>
+											<div>I'm literally dying because it's so good.</div>
+										</div>
+										<div></div>
+									</div>
+									
+										<div></div>
 									</div>
 								</div>
 							</div>
-						</c:forEach>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="blog__sidebar">
-						<div class="blog__sidebar__item">
-							<div class="sidebar__title">
-								<h6>Follow us</h6>
-							</div>
-							<div class="sidebar__social">
-								<a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
-								<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-							</div>
-						</div>
-						<div class="blog__sidebar__item">
-							<div class="sidebar__title">
-								<h6>Likes</h6>
-							</div>
-							<div class="sidebar__feature__post">
-								<div class="sidebar__feature__item">
-
-									<h6>
-										<a href="#">The Best</a>
-									</h6>
-									<ul>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-								<div class="sidebar__feature__item">
-									<h6>
-										<a href="#">The Best Web Hosting Service with Bitcoin at GeeksHosted</a>
-									</h6>
-									<ul>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-								<div class="sidebar__feature__item">
-									<h6>
-										<a href="#">The Best Web Hosting Service with Bitcoin at GeeksHosted</a>
-									</h6>
-									<ul>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-								<div class="sidebar__feature__item">
-									<h6>
-										<a href="#">The Best Web Hosting Service with Bitcoin at GeeksHosted</a>
-									</h6>
-									<ul>
-										<li><i class="fa fa-clock-o"></i> Seb 06, 2019</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="blog__sidebar__item">
-							<div class="sidebar__subscribe">
-								<div class="sidebar__title">
-									<h6>Go mobile</h6>
-								</div>
-								<form action="#">
-									<button type="submit" class="site-btn">App store Banner</button>
-									<button type="submit" class="site-btn">App store Banner</button>
-								</form>
-							</div>
-						</div>
+				<div class="tscb-sidebar">
+					<div class="ad-container">
+						<a href="https://github.com/Mpompili" target="_blank"><img src="https://res.cloudinary.com/mpompili/image/upload/v1526013412/gotogithub.jpg"></a>
 					</div>
+					<div class="ad-container">
+						<a href="https://www.linkedin.com/in/michael-pompili-916a0837/" target="_blank"><img src="https://res.cloudinary.com/mpompili/image/upload/v1526335358/linkedinad.jpg"></a>
+					</div>
+					<div class="extraspace"></div>
 				</div>
 			</div>
-		</div>
 	</section>
 	<!-- Blog Section End -->
 
-	
+
 
 	<!-- Js Plugins -->
 	<script src="/soundcloud/deerhost/js/jquery-3.3.1.min.js"></script>
