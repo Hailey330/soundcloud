@@ -144,10 +144,19 @@ public class BoardRepository {
 			// while 돌려서 rs → java 오브젝트에 넣기
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
-				Board board = new Board(rs.getInt("id"), rs.getInt("userId"), rs.getString("userName"),
-						rs.getString("title"), rs.getString("content"), rs.getString("musicFile"),
-						rs.getString("fileImage"), rs.getInt("likeCount"), rs.getInt("playCount"),
-						rs.getTimestamp("createDate"));
+				Board board = new Board
+						(
+								rs.getInt("id"), 
+								rs.getInt("userId"), 
+								rs.getString("userName"),
+								rs.getString("title"), 
+								rs.getString("content"), 
+								rs.getString("musicFile"),
+								rs.getString("fileImage"), 
+								rs.getInt("likeCount"), 
+								rs.getInt("playCount"),
+								rs.getTimestamp("createDate")
+						);
 				boards.add(board);
 			}
 			return boards;
@@ -161,17 +170,31 @@ public class BoardRepository {
 	}
 
 	public Board findById(int id) {
-		final String SQL = "";
-		Board board = new Board();
+		final String SQL = "SELECT * FROM board WHERE id = ?";
+		Board board = null;
 
 		try {
 			conn = DBConn.getConnection();
 			pstmt = conn.prepareStatement(SQL);
 			// 물음표 완성하기
-
+			pstmt.setInt(1, id);
+			rs = pstmt.executeQuery();
 			// if 돌려서 rs → java 오브젝트에 넣기
+			if(rs.next()) {
+				board = new Board();
+				board.setId(rs.getInt("id"));
+				board.setUserId(rs.getInt("userId"));
+				board.setUserName(rs.getString("userName"));
+				board.setTitle(rs.getString("title"));
+				board.setContent(rs.getString("content"));
+				board.setMusicFile(rs.getString("musicFile"));
+				board.setFileImage(rs.getString("fileImage"));
+				board.setLikeCount(rs.getInt("likeCount"));
+				board.setPlayCount(rs.getInt("playCount"));
+				board.setCreateDate(rs.getTimestamp("createDate"));
 
-			return board;
+				return board;
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(TAG + "findById : " + e.getMessage());

@@ -153,9 +153,9 @@
 
 											<div class="soundTitle__usernameTitleContainer">
 												<div class="soundTitle__usernameHeroContainer">
-													<a href="#" class="soundTitle__username g-opacity-transition-500 g-type-shrinkwrap-inline g-type-shrinkwrap-large-secondary soundTitle__usernameHero sc-type-medium"> creator name </a>
+													<a href="#" class="soundTitle__username g-opacity-transition-500 g-type-shrinkwrap-inline g-type-shrinkwrap-large-secondary soundTitle__usernameHero sc-type-medium"> ${detailDto.board.userName} </a>
 												</div>
-												<span class="soundTitle__title sc-font g-type-shrinkwrap-inline g-type-shrinkwrap-large-primary"> <span>Love Is Far Away</span>
+												<span class="soundTitle__title sc-font g-type-shrinkwrap-inline g-type-shrinkwrap-large-primary"> <span>${detailDto.board.title}</span>
 												</span>
 											</div>
 											<div class="soundTitle__additionalContainer">
@@ -170,7 +170,7 @@
 
 								<div class="fullHero__info">
 									<div class="fullHero__uploadTime sc-type-medium">
-										<time class="relativeTime" title="8 August 2018" datetime="2018-08-08T08:38:46.000Z">
+										<time class="relativeTime" title="8 August 2018" datetime="${detailDto.board.createDate}">
 											<span class="sc-visuallyhidden">1 year ago</span><span aria-hidden="true">1 year ago</span>
 										</time>
 									</div>
@@ -274,7 +274,7 @@
 													<div class="userBadge__title">
 														<h3 class="userBadge__username sc-type-light">
 															<!-- creator 이름 누르면 cretor 공간으로 -->
-															<a href="#" title="Visit creator's profile" class="userBadge__usernameLink sc-link-dark sc-truncate"> <span class="sc-truncate">Creator name</span>
+															<a href="#" title="Visit creator's profile" class="userBadge__usernameLink sc-link-dark sc-truncate"> <span class="sc-truncate">${detailDto.board.userName}</span>
 															</a> <span></span>
 														</h3>
 													</div>

@@ -119,7 +119,7 @@
 									<div class="col-10">
 										<div class="poca-music-area mt-20 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
 											<div class="poca-music-thumbnail">
-												<img src="${board.fileImage}" alt="">
+												<a href="/soundcloud/board?cmd=detail&boardId=${board.id}"> <img src="${board.fileImage}" alt="music image"></a>
 											</div>
 											<div class="poca-music-content">
 												<div class="music-meta-data">
@@ -127,7 +127,9 @@
 														<a href="#" class="music-author">${board.userName}</a>
 													</p>
 												</div>
-												<h6>${board.title}</h6>
+												<h6>
+													<a href="/soundcloud/board?cmd=detail&boardId=${board.id}">${board.title}</a>
+												</h6>
 
 												<!-- Music Player -->
 												<div class="poca-music-player">
@@ -139,8 +141,7 @@
 												<div class="likes-share-download d-flex align-items-center justify-content-between">
 													<a href="#"><i class="fa fa-heart" aria-hidden="true"></i>${board.likeCount}</a>
 													<div>
-														<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i>${board.playCount}</a> 
-														<a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
+														<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i>${board.playCount}</a> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
 													</div>
 												</div>
 											</div>
@@ -158,8 +159,7 @@
 								<h6>Follow us</h6>
 							</div>
 							<div class="sidebar__social">
-								<a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
-								<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+								<a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
 							</div>
 						</div>
 						<div class="blog__sidebar__item">
@@ -220,7 +220,7 @@
 	</section>
 	<!-- Blog Section End -->
 
-	
+
 
 	<!-- Js Plugins -->
 	<script src="/soundcloud/deerhost/js/jquery-3.3.1.min.js"></script>
