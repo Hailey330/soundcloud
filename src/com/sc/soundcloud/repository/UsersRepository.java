@@ -26,6 +26,26 @@ public class UsersRepository {
 	private PreparedStatement pstmt = null;
 	private ResultSet rs = null;
 	
+	public int updateProfile(int id, String userProfile) {
+		final String SQL = "UPDATE users SET userProfile = ? WHERE id = ?";
+		
+		try {
+			conn = DBConn.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			// 물음표 완성하기
+			pstmt.setString(1, userProfile);
+			pstmt.setInt(2, id);
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(TAG+"updateProfile(id, userProfile) : "+e.getMessage());
+		} finally {
+			DBConn.close(conn, pstmt);
+		}
+
+		return -1;
+	}
+	
 	public int update(int id, String userFile) {
 		final String SQL = "UPDATE users SET userFile = ? WHERE id = ?";
 		
@@ -203,6 +223,7 @@ public class UsersRepository {
 						.username(rs.getString("username"))
 						.email(rs.getString("email"))
 						.userRole(rs.getString("userRole"))
+						.userProfile(rs.getString("userProfile"))
 						.createDate(rs.getTimestamp("createDate"))
 						.build();
 			}

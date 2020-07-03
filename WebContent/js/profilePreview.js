@@ -1,9 +1,9 @@
-$("#musicImage").on("change", function(e) { // 앨범 커버 이미지 
+$("#userProfile").on("change", function(e) { // 앨범 커버 이미지 
 	console.log(e);
 	var f = e.target.files[0];
 	if (!f.type.match("image*")) {
 		alert("이미지만 첨부할 수 있습니다.");
-		$("#musicImage").val('');
+		$("#userProfile").val('');
 		return;
 	}
 	
