@@ -1,125 +1,36 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Deerhost Template">
-<meta name="keywords" content="Deerhost, unica, creative, html">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 <title>Your stream on SoundCloud</title>
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
-
-<!-- Css Styles -->
-<link rel="stylesheet" href="/soundcloud/deerhost/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="/soundcloud/deerhost/css/font-awesome.min.css" type="text/css">
-<link rel="stylesheet" href="/soundcloud/deerhost/css/elegant-icons.css" type="text/css">
-<link rel="stylesheet" href="/soundcloud/deerhost/css/flaticon.css" type="text/css">
-<link rel="stylesheet" href="/soundcloud/deerhost/css/owl.carousel.min.css" type="text/css">
-<link rel="stylesheet" href="/soundcloud/deerhost/css/slicknav.min.css" type="text/css">
-<link rel="stylesheet" href="/soundcloud/deerhost/css/style.css" type="text/css">
-
-<link rel="stylesheet" type="text/css" href="/soundcloud/login/css/main.css">
-
+<%@ include file="../include/boot/css.jsp"%>
 <link rel="stylesheet" href="/soundcloud/css/detailMusic.css">
 <link rel="stylesheet" href="/soundcloud/css/detail.css">
-
-
 
 </head>
 
 <body>
 
-
-	<!-- Offcanvas Menu Begin -->
-	<div class="offcanvas__menu__overlay"></div>
-	<div class="offcanvas__menu__wrapper">
-		<div class="canvas__close">
-			<span class="fa fa-times-circle-o"></span>
-		</div>
-		<div class="offcanvas__logo">
-			<a href="#"><img src="#" alt=""></a>
-		</div>
-		<nav class="offcanvas__menu mobile-menu">
-			<ul>
-				<li><a href="/soundcloud/main?cmd=home">Home</a></li>
-				<li><a href="/soundcloud/board?cmd=stream">Stream</a></li>
-				<li><a href="/soundcloud/board?cmd=library">Library</a></li>
-				<li><a href="/soundcloud/board?cmd=fileUpload">Upload</a></li>
-				<li><a href="#">YOURS</a>
-					<ul class="dropdown">
-						<li><a href="/soundcloud/board?cmd=profile">Profile</a></li>
-						<li><a href="/soundcloud/board?cmd=library">Likes</a></li>
-						<li><a href="/soundcloud/board?cmd=library">Following</a></li>
-						<li><a href="/soundcloud/users?cmd=logout">Sign out</a></li>
-					</ul></li>
-			</ul>
-		</nav>
-		<div id="mobile-menu-wrap"></div>
-
-	</div>
-	<!-- Offcanvas Menu End -->
-
-	<!-- Header Section Begin -->
-	<header class="header-section header-normal">
-
-		<div class="container">
-			<div class="row header__front">
-				<div class="col-lg-1 col-md-1">
-					<div class="header__logo">
-						<a href="/soundcloud/main?cmd=home"><img src="/soundcloud/deerhost/img/logo-white-cloud.png" alt=""></a>
-					</div>
-				</div>
-				<div class="col-lg-9 col-md-9">
-					<nav class="header__menu">
-						<ul>
-							<li><a href="/soundcloud/main?cmd=home">Home</a></li>
-							<li><a href="/soundcloud/board?cmd=stream">Stream</a></li>
-							<li><a href="/soundcloud/board?cmd=library">Library</a></li>
-							<li><a href="/soundcloud/board?cmd=fileUpload">Upload</a></li>
-							<li><a href="#">YOURS</a>
-								<ul class="dropdown">
-									<li><a href="/soundcloud/board?cmd=profile">Profile</a></li>
-									<li><a href="/soundcloud/board?cmd=library">Likes</a></li>
-									<li><a href="/soundcloud/board?cmd=library">Following</a></li>
-									<li><a href="/soundcloud/users?cmd=logout">Sign out</a></li>
-								</ul></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<div class="canvas__open">
-				<span class="fa fa-bars"></span>
-			</div>
-		</div>
-	</header>
-	<!-- Header End -->
+	<%@ include file="../include/offcanvas.jsp"%>
+	<%@ include file="../include/header.jsp"%>
 
 	<!-- Blog Section Begin -->
 	<section class="blog-section">
 
 		<!-- 전체 구성 -->
 		<div class="l-container l-content">
-			<div class="l-product-banners l-inner-fullwidth">
-				<div class="l-container">
-					<div></div>
-				</div>
-			</div>
 			<div id="content" role="main">
 				<div>
 					<div class="l-banner l-inner-fullwidth">
-
 						<div class="listenUpsell sc-type-light sc-border-box upsellBanner"></div>
 					</div>
 
 					<!-- 음악 재생 바 -->
 					<div class="l-listen-hero">
-
 						<div class="fullListenHero fullHero l-inner-fullwidth">
 							<div style="height: 100%;">
 								<div class="backgroundGradient">
@@ -135,11 +46,11 @@
 										<div class="listenArtworkWrapper__artwork">
 											<div class="image m-sound image__lightOutline readOnly customImage interactive sc-artwork sc-artwork-placeholder-0 m-loaded" tabindex="0" style="height: 100%; width: 100%;">
 												<span style="background-image: url(&quot;${detailDto.boardDto.board.fileImage}&quot;); width: 100%; height: 100%; opacity: 1;" class="sc-artwork sc-artwork-placeholder-0  image__full g-opacity-transition" aria-label="${detailDto.boardDto.board.title}" aria-role="img"></span>
-
 											</div>
 										</div>
 									</div>
 								</div>
+								
 								<span class="fullHero__tierIndicator-plus g-go-plus-marker-artwork-large g-go-marker-artwork sc-hidden"></span>
 								<div class="fullHero__title">
 									<div class="soundTitle sc-clearfix sc-hyphenate listenContext">
@@ -162,7 +73,6 @@
 											</div>
 										</div>
 									</div>
-
 								</div>
 
 								<div class="fullHero__info">
@@ -174,17 +84,14 @@
 									<a rel="nofollow" class="sc-tag" href="/tags/city"><span class="sc-truncate sc-type-medium" style="max-width: 120px">tag</span></a>
 								</div>
 
-
 								<div class="fullHero__playerArea">
 									<div class="fullHero__waveform">
-
 										<!-- Music Player -->
 										<div class="poca-music-player">
 											<audio preload="auto" controls>
 												<source src="/soundcloud/music/audio/dummy-audio.mp3">
 											</audio>
 										</div>
-
 									</div>
 								</div>
 							</div>
@@ -198,7 +105,6 @@
 							<div class="l-about-rows">
 								<div class="l-about-row">
 									<div class="l-about-top">
-
 										<div class="listenEngagement sc-clearfix">
 											<div class="listenEngagement__commentForm">
 
@@ -213,7 +119,6 @@
 															<input onkeyup="enterkey(${detailDto.boardDto.board.id}, ${sessionScope.principal.id});" type="text" class="commentForm__input" id="tokenInput__comment" autocomplete="off" placeholder="Write a comment" aria-invalid="false" aria-describedby="">
 															<div class="commentInput__validation g-input-validation g-input-validation-hidden" id=""></div>
 														</div>
-
 													</div>
 													<div class="commentForm__inputMessage g-input-validation g-input-validation-hidden">Comment must not exceed 1000 characters</div>
 												</div>
@@ -259,9 +164,9 @@
 										</div>
 									</div>
 								</div>
+								
 								<!-- creator, 태그, 댓글 -->
 								<div class="l-about-row l-listen__mainContent">
-
 									<!-- creator 프로필 -->
 									<div class="l-about-left">
 										<div class="listenArtistInfo">
@@ -282,8 +187,7 @@
 													<div class="userBadge__title">
 														<h3 class="userBadge__username sc-type-light">
 															<!-- creator 이름 누르면 cretor 공간으로 -->
-															<a href="#" title="Visit creator's profile" class="userBadge__usernameLink sc-link-dark sc-truncate"> <span class="sc-truncate">${detailDto.boardDto.board.userName}</span>
-															</a> <span></span>
+															<span class="sc-truncate" style="color: #111111;">${detailDto.boardDto.board.userName}</span>
 														</h3>
 													</div>
 													<div class="userBadge__meta">
@@ -313,17 +217,17 @@
 										</div>
 									</div>
 									<div class="l-about-right">
-
 										<div class="listenDetails">
-
-
 											<!-- 태그 -->
 											<div class="listenDetails__partialInfo">
 												<div class="truncatedAudioInfo m-collapsed">
 													<div class="truncatedAudioInfo__wrapper" style="max-height: 140px;">
 														<div class="truncatedAudioInfo__content">
 															<div class="sc-type-small">
-															<div><p>${detailDto.boardDto.board.content}</p></div></div>
+																<div>
+																	<p>${detailDto.boardDto.board.content}</p>
+																</div>
+															</div>
 															<div class="soundTags">
 																<div class="sc-tag-group">
 																	<a href="/tags/kpop" class="sc-tag sc-tag-medium"><span class="sc-truncate">kpop</span></a> <a href="/tags/boyrec" class="sc-tag sc-tag-medium"><span class="sc-truncate">boyrec</span></a> <a href="/tags/gopyol" class="sc-tag sc-tag-medium"><span class="sc-truncate">gopyol</span></a> <a href="/tags/yubin" class="sc-tag sc-tag-medium"><span class="sc-truncate">yubin</span></a> <a href="/tags/kehdii" class="sc-tag sc-tag-medium"><span class="sc-truncate">kehdii</span></a> <a href="/tags/citypop" class="sc-tag sc-tag-medium"><span class="sc-truncate">citypop</span></a> <a href="/tags/%EC%8B%9C%ED%8B%B0%ED%8C%9D" class="sc-tag sc-tag-medium"><span class="sc-truncate">시티팝</span></a> <a href="/tags/%EC%94%A8%ED%8B%B0%ED%8C%9D" class="sc-tag sc-tag-medium"><span class="sc-truncate">씨티팝</span></a> <a href="/tags/%EC%BC%80%EC%9D%B4%ED%8C%9D" class="sc-tag sc-tag-medium"><span class="sc-truncate">케이팝</span></a> <a href="/tags/%EB%B3%B4%EC%9D%B4%EB%A0%89"
@@ -387,7 +291,6 @@
 																		</span>
 
 																		<!-- 본인 댓글 삭제  -->
-
 																		<div class="commentItem__controls">
 																			<c:if test="${replyDto.reply.userId eq sessionScope.principal.id}">
 																				<button type="button" onclick="replyDelete(${replyDto.reply.id})" class="sc-button-delete sc-button sc-button-small sc-button-icon sc-button-responsive" tabindex="0" aria-haspopup="true" role="button" aria-owns="dropdown-button-29171" title="Delete this comment" aria-label="Delete this comment">Delete this comment</button>
@@ -487,9 +390,7 @@
 
 																	<div class="soundTitle__usernameTitleContainer">
 																		<div class="sc-type-light soundTitle__secondary  sc-truncate">
-																			<a href="/jane_pop" class="soundTitle__username
-              sc-link-light
-            "> <span class="soundTitle__usernameText">Jane POP</span>
+																			<a href="/jane_pop" class="soundTitle__username sc-link-light"> <span class="soundTitle__usernameText">Jane POP</span>
 																			</a>
 																		</div>
 																		<a class="soundTitle__title sc-link-dark" href="/jane_pop/drive-to-1980-love" title="Drive To 1980 Love"> <span class="sc-truncate">Drive To 1980 Love</span>
@@ -984,19 +885,12 @@
 
 	<!-- Js Plugins -->
 
-	<script src="/soundcloud/deerhost/js/jquery-3.3.1.min.js"></script>
-	<script src="/soundcloud/deerhost/js/bootstrap.min.js"></script>
-	<script src="/soundcloud/deerhost/js/jquery.slicknav.js"></script>
-	<script src="/soundcloud/deerhost/js/owl.carousel.min.js"></script>
-	<script src="/soundcloud/deerhost/js/main.js"></script>
-
-	<script src="/soundcloud/music/js/jquery.min.js"></script>
-	<script src="/soundcloud/music/js/poca.bundle.js"></script>
-	<script src="/soundcloud/music/js/default-assets/active.js"></script>
+	<%@ include file="../include/boot/deerhost.jsp"%>
+	<%@ include file="../include/boot/music.jsp"%>
 	<script src="/soundcloud/js/playerEdit.js"></script>
 	<script src="/soundcloud/js/reply.js"></script>
 	<script src="/soundcloud/js/detail.js"></script>
-	
+
 
 	<!-- audio play 버튼 제이쿼리 -->
 	<script>
@@ -1004,7 +898,3 @@
 			$('.audioplayer-playpause').attr('id', 'play-btn');
 		});
 	</script>
-
-</body>
-
-</html>
