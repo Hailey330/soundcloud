@@ -49,16 +49,28 @@ public class BoardUpdateFileProcAction implements Action {
 					new DefaultFileRenamePolicy());
 			// request 되는 순간 null로 변함
 			String userFile = multi.getFilesystemName("musicFile");
-			System.out.println("userFile : " + userFile);
+			System.out.println("userFile : " + userFile); // 음악 파일 확인
 
+//			String userImage = multi.getFilesystemName("musicImage");			
+//			System.out.println("userImage : " + userImage);
+			
 			userId = Integer.parseInt(multi.getParameter("userId"));
 			boardId = Integer.parseInt(multi.getParameter("boardId"));
-
+			String title = multi.getParameter("title");
+			String content = multi.getParameter("content");
+			String fileImage = multi.getParameter("musicImage");
 			musicFile = contextPath + "/upload/" + userFile;
 			System.out.println("musicFile : " + musicFile);
 
-			Board board = Board.builder().id(boardId).userId(userId).userName(principal.getUsername())
-					.musicFile(musicFile).build();
+			Board board = Board.builder()
+					.id(boardId)
+					.userId(userId)
+					.userName(principal.getUsername())
+					.title(title)
+					.content(content)
+					.fileImage(fileImage)
+					.musicFile(musicFile)
+					.build();
 
 			// 2. BoardRepository 연결해서 update(boardId) 함수 호출
 			BoardRepository boardRepository = BoardRepository.getInstance();
@@ -68,6 +80,7 @@ public class BoardUpdateFileProcAction implements Action {
 			if (result == 1) {
 				BoardResponseDto boardDto = BoardResponseDto.builder().board(board).build();
 				request.setAttribute("boardDto", boardDto);
+				System.out.println("boardDto 확인 ::: " + boardDto);
 				RequestDispatcher dis = request.getRequestDispatcher("board/updateWrite.jsp");
 				dis.forward(request, response);
 

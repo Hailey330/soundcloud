@@ -124,11 +124,14 @@
 											<div class="chooseFiles">
 												<label class="chooseFiles__button sc-button sc-button-cta sc-button-large sc-button-color" style="min-width: 300px">Choose files to upload 
 												<input type="file" id="musicFile" name="musicFile" class="chooseFiles__input sc-visuallyhidden" value="${boardDto.board.musicFile}"> 
+																								
 												</label>
 												<br>
 												<input type="hidden" name="userId" value="${sessionScope.principal.id}" /> 
 												<input type="hidden" name="boardId" value="${boardDto.board.id}" /> 
-												<input name="boardId" value="${boardDto.board.id}" /> 
+												<input type="hidden" name="title" value="${boardDto.board.title}" /> 
+												<input type="hidden" name="content" value="${boardDto.board.content}" /> 
+												<input type="hidden" name="musicImage" value="${boardDto.board.fileImage}" />
 												
 												<label class="chooseFiles__button sc-button sc-button-cta sc-button-large" style="min-width: 300px">Upload 
 												<input type="submit" class="chooseFiles__input sc-visuallyhidden">
