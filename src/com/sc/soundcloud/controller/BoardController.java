@@ -14,6 +14,7 @@ import com.sc.soundcloud.action.board.BoardDeleteAction;
 import com.sc.soundcloud.action.board.BoardDetailAction;
 import com.sc.soundcloud.action.board.BoardFileUploadAction;
 import com.sc.soundcloud.action.board.BoardFileUploadProcAction;
+import com.sc.soundcloud.action.board.BoardLikeAction;
 import com.sc.soundcloud.action.board.BoardStreamAction;
 import com.sc.soundcloud.action.board.BoardUpdateFileAction;
 import com.sc.soundcloud.action.board.BoardUpdateFileProcAction;
@@ -73,7 +74,9 @@ public class BoardController extends HttpServlet {
 			return new BoardUpdateWriteProcAction(); 
 		} else if(cmd.equals("delete")) {
 			return new BoardDeleteAction(); 
-		} 
+		} else if(cmd.equals("like")) {
+			return new BoardLikeAction();
+		}
 		return null;
 	}
 

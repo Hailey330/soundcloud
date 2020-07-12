@@ -2,7 +2,6 @@
 
 <%@ include file="../include/member/nav.jsp"%>
 
-
 <div class="limiter">
 	<div class="container-login100" style="background-image: url('/soundcloud/login/images/main.jpeg');">
 		<div class="wrap-login100">

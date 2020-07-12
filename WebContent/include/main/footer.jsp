@@ -4,7 +4,7 @@
 <footer class="footer-section">
 	<div class="footer__top">
 		<div class="container">
-			<div class="row">
+			<div class="row" style="justify-content: center; text-align: center;">
 				<div class="col-lg-8 col-md-8">
 					<div class="footer__top-auth">
 						<h5>Thanks for listening. Now join in.</h5>

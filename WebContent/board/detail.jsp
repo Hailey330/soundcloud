@@ -89,7 +89,7 @@
 										<!-- Music Player -->
 										<div class="poca-music-player">
 											<audio preload="auto" controls>
-												<source src="/soundcloud/music/audio/dummy-audio.mp3">
+												<source src="${detailDto.boardDto.board.musicFile}">
 											</audio>
 										</div>
 									</div>

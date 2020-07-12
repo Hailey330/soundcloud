@@ -60,9 +60,10 @@
 												</div>
 												<!-- Likes, Share & Download -->
 												<div class="likes-share-download d-flex align-items-center justify-content-between">
-													<a href="#"><i class="fa fa-heart" aria-hidden="true"></i>${board.likeCount}</a>
+													<a href="#"><i class="fa fa-heart" aria-hidden="true" id="like" onclick="return like()"></i>${board.likeCount}</a>
 													<div>
-														<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i>${board.playCount}</a> <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
+														<a href="#" class="mr-4"><i class="fa fa-play" aria-hidden="true"></i>${board.playCount}</a> 
+														<a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 9 </a>
 													</div>
 												</div>
 											</div>
@@ -144,3 +145,4 @@
 	<!-- Js Plugins -->
 	<%@ include file="../include/boot/deerhost.jsp"%>
 	<%@ include file="../include/boot/music.jsp"%>
+	<%@ include file="../js/likeCount.js"%>

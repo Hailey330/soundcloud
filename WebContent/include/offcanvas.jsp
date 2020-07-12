@@ -17,7 +17,7 @@
 			<li><a href="/soundcloud/board?cmd=fileUpload">Upload</a></li>
 			<li><a href="#">YOURS</a>
 				<ul class="dropdown">
-					<li><a href="/soundcloud/board?cmd=profile">Profile</a></li>
+					<li><a href="/soundcloud/users?cmd=profileUpload">Profile</a></li>
 					<li><a href="/soundcloud/board?cmd=library">Likes</a></li>
 					<li><a href="/soundcloud/board?cmd=library">Following</a></li>
 					<li><a href="/soundcloud/users?cmd=logout">Sign out</a></li>
